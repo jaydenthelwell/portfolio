@@ -1,0 +1,11 @@
+body {
+  background-image: url(/assets/images/trainscene.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/* @media screen and (max-width: 768px) {
+  body {
+    background-image: url(/assets/images/trainscene.svg);
+  }
+} */
