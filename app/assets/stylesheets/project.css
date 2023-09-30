@@ -1,0 +1,70 @@
+#projects-title {
+  font-size: 70px;
+  font-family: "Londrina Shadow";
+  padding-left: 5%;
+}
+
+#jam {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  transition: 0.3s;
+  text-align: center;
+  left: 29%;
+  transform: translateY(190%);
+}
+
+#music {
+  width: 50px;
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  transform: translateX(100%);
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+#jam img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#music img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#jam:hover #music {
+  transform: translateX(0);
+  visibility: visible;
+}
+
+#groove {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  transition: 0.3s;
+  text-align: center;
+  left: 58%;
+  transform: translateY(270%);
+}
+
+#groove img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#instrument {
+  width: 50px;
+  position: absolute;
+  left: 100%;
+  top: 20%;
+  transform: translateX(-100%);
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+#groove:hover #instrument {
+  transform: translateX(0);
+  visibility: visible;
+}

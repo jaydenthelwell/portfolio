@@ -1,0 +1,130 @@
+.boat {
+  position: fixed;
+  top: 58%;
+  left: 35%;
+  width: 35%;
+}
+
+.beach_ball {
+  position: fixed;
+  top: 70%;
+  left: 80%;
+  width: 5%;
+  animation: bounce 2s infinite;
+}
+
+.background_boat {
+  position: fixed;
+  top: 35%;
+  left: 60%;
+  width: 8%;
+  animation: boat 100s linear forwards;
+}
+
+@keyframes boat {
+  0% {
+    transform: translateX(200%) ;
+  }
+  100% {
+    transform: translateX(-900%);
+    width: 0px;
+  }
+}
+
+
+@keyframes sunsetCloud {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
+
+@keyframes sunsetCloud2 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(130%);
+  }
+}
+
+.sunset-cloud-1 {
+  position: fixed;
+  left: 30%;
+  width: 25%;
+  top: -10%;
+  animation: sunsetCloud 200s linear infinite;
+}
+
+.sunset-cloud-2 {
+  position: fixed;
+  left: 75%;
+  width: 20%;
+  top: 0%;
+  animation: sunsetCloud2 130s linear infinite;
+}
+
+.jungle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.sign-post {
+  position: fixed;
+  width: 180px;
+  left: 45%;
+  top: 45%;
+}
+
+#door {
+  position: fixed;
+  width: 80px;
+  top: 42.5%;
+  left: 19.8%;
+  transition: 0.8s;
+}
+
+#door img {
+  visibility: hidden;
+  width: 75px;
+}
+
+#door:hover img {
+  visibility: visible;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.post-it-beach {
+  position: fixed;
+  width: 65px;
+  top: 43%;
+  left: 13.8%;
+}
+
+.post-it-text {
+  position: fixed;
+  width: 65px;
+  top: 43%;
+  left: 13.8%;
+  font-size: 20px;
+  font-family: "Verdana";
+  text-align: center;
+}

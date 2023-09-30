@@ -1,0 +1,276 @@
+body {
+  overflow-x: hidden;
+}
+
+.background {
+  position: relative;
+}
+
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+@keyframes moveCloud {
+  0% {
+    transform: translateX(-80%);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
+
+@keyframes moveCloud2 {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(130%);
+  }
+}
+
+@keyframes moveCloud3 {
+  0% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(300%);
+  }
+}
+
+@keyframes moveCloud4 {
+  0% {
+    transform: translateX(-400%);
+  }
+  100% {
+    transform: translateX(900%);
+  }
+}
+
+@keyframes moveCloud5 {
+  0% {
+    transform: translateX(-500%);
+  }
+  100% {
+    transform: translateX(900%);
+  }
+}
+
+@keyframes moveCloud6 {
+  0% {
+    transform: translateX(-700%);
+  }
+  100% {
+    transform: translateX(900%);
+  }
+}
+
+@keyframes moveCloud7 {
+  0% {
+    transform: translateX(-900%);
+  }
+  100% {
+    transform: translateX(900%);
+  }
+}
+
+#cloud-svg {
+  animation: moveCloud 200s linear infinite;
+  width: 600px;
+  position: absolute;
+  top: -40px;
+  /* left: 80px; */
+}
+
+#cloud-2-svg {
+  animation: moveCloud2 360s linear infinite;
+  width: 800px;
+  position: absolute;
+  top: -150px;
+  left: 100px;
+  /* left: 900px; */
+}
+
+#cloud-3-svg {
+  animation: moveCloud3 300s linear infinite;
+  width: 400px;
+  position: absolute;
+  top: -30px;
+  /* left: 50px; */
+}
+
+#cloud-4-svg {
+  animation: moveCloud4 500s linear infinite;
+  width: 250px;
+  position: absolute;
+  top: 20px;
+}
+#cloud-5-svg {
+  animation: moveCloud5 500s linear infinite;
+  width: 450px;
+  position: absolute;
+  top: -90px;
+}
+
+#cloud-6-svg {
+  animation: moveCloud6 500s linear infinite;
+  width: 650px;
+  position: absolute;
+  top: -70px;
+}
+#cloud-7-svg {
+  animation: moveCloud7 500s linear infinite;
+  width: 200px;
+  position: absolute;
+  top: 100px;
+}
+
+@keyframes flyButterfly {
+  0% {
+    transform: translateX(-100%) translateY(0);
+  }
+  10% {
+    transform: translateX(200%) translateY(-20px);
+  }
+  20% {
+    transform: translateX(400%) translateY(0);
+  }
+  30% {
+    transform: translateX(600%) translateY(20px);
+  }
+  40% {
+    transform: translateX(800%) translateY(40px);
+  }
+  50% {
+    transform: translateX(1000%) translateY(60px);
+  }
+  60% {
+    transform: translateX(800%) translateY(80px);
+  }
+  70% {
+    transform: translateX(600%) translateY(100px);
+  }
+  80% {
+    transform: translateX(400%) translateY(120px);
+  }
+  90% {
+    transform: translateX(200%) translateY(140px);
+  }
+  100% {
+    transform: translateX(-100%) translateY(160px);
+  }
+}
+
+.butterfly {
+  animation: flyButterfly 20s linear infinite;
+  width: 60px;
+  position: absolute;
+  top: 500px;
+}
+
+@keyframes setInitialPositionCloud {
+  0% {
+    transform: translateX(70%);
+  }
+  100% {
+    transform: translateX(400%);
+  }
+}
+@keyframes setInitialPositionCloud1 {
+  0% {
+    transform: translateX(90%);
+  }
+  100% {
+    transform: translateX(500%);
+  }
+}
+@keyframes setInitialPositionCloud2 {
+  0% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(700%);
+  }
+}
+
+#cloud-9-svg {
+  animation: setInitialPositionCloud 100s linear forwards;
+  width: 600px;
+  position: absolute;
+  top: -40px;
+  /* left: 80px; */
+}
+
+#cloud-10-svg {
+  animation: setInitialPositionCloud1 140s linear forwards;
+  width: 800px;
+  position: absolute;
+  top: -150px;
+  left: 100px;
+  /* left: 900px; */
+}
+
+#cloud-11-svg {
+  animation: setInitialPositionCloud2 200s linear forwards;
+  width: 400px;
+  position: absolute;
+  top: -30px;
+  /* left: 50px; */
+}
+/* For smaller screens (e.g., smartphones) */
+@media (max-width: 768px) {
+
+}
+
+/* For medium-sized screens (e.g., tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* CSS rules for medium-sized screens */
+}
+
+/* For larger screens (e.g., desktops) */
+@media (min-width: 1025px) {
+  /* CSS rules for larger screens */
+}
+
+hr{
+  width: 50px;
+  border-color: transparent;
+  border-right-color: rgba(255, 255, 255, 0.7);
+  border-right-width: 50px;
+  position: absolute;
+  bottom: 100%;
+  transform-origin: 100% 50%;
+  animation: rain 1s linear infinite;
+}
+
+@keyframes rain {
+  from {
+  transform: rotate(105deg) translateX(0);
+  }
+  to {
+  transform: rotate(105deg) translateX(calc(100vh + 20px));
+  }
+}
+
+.bottle {
+  position: fixed;
+  top: 45%;
+  left: 55%;
+  width: 15%;
+  animation: shake 1.5s linear infinite;
+}
+
+.start {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 5000;
+}
