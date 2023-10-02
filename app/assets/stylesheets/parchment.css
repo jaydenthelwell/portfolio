@@ -13,12 +13,12 @@
 
 .popup-content {
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
   font-family: "Atma";
   position: relative;
   z-index: 5;
   max-width: 80%;
-  padding: 25%;
+  padding: 20%;
 }
 
 .close-popup {
