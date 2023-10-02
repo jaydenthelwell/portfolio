@@ -1,17 +1,17 @@
 @media (max-width: 768px) {
   @keyframes moveTrain {
     0% {
-      transform: translateX(120%);
+      transform: translateX(200%);
     }
 
     100% {
-      transform: translateX(30%);
+      transform: translateX(60%);
     }
   }
 
   @keyframes moveTrain2 {
     0% {
-      transform: translateX(30%);
+      transform: translateX(60%);
     }
 
     100% {
