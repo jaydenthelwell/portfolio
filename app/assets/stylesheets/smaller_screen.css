@@ -5,13 +5,13 @@
     }
 
     100% {
-      transform: translateX(60%);
+      transform: translateX(120%);
     }
   }
 
   @keyframes moveTrain2 {
     0% {
-      transform: translateX(60%);
+      transform: translateX(120%);
     }
 
     100% {
@@ -26,5 +26,6 @@
 
   #train-svg-2 {
     animation: moveTrain2 5s linear forwards;
+
   }
 }
