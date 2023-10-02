@@ -4,13 +4,13 @@
   }
 
   100% {
-    transform: translateX(0%);
+    transform: translateX(calc(50% - 50vw));
   }
 }
 
 @keyframes moveTrain2 {
   0% {
-    transform: translateX(0%);
+    transform: translateX(calc(50% - 50vw));
   }
 
   100% {
