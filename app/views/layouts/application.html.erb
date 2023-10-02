@@ -21,8 +21,8 @@
 
   <body>
     <div id="rotate-message">
-        <img src="rotate-smartphone.png" alt="Rotate Phone">
-        <p>Please rotate your device to landscape mode</p>
+      <%= image_tag("rotate-smartphone.png", class:"rotate-icon" , alt: "Rotate Phone") %>
+      <p>Please rotate your device to landscape mode</p>
     </div>
     <%= yield %>
     <%= javascript_include_tag 'application', "data-turbolinks-track" => true %>
