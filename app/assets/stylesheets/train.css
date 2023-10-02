@@ -24,6 +24,40 @@
   top: 440px;
 }
 
+@media (max-width: 768px) {
+  @keyframes moveTrain {
+    0% {
+      transform: translateX(520%);
+    }
+
+    100% {
+      transform: translateX(250%);
+    }
+  }
+
+  @keyframes moveTrain2 {
+    0% {
+      transform: translateX(250%);
+    }
+
+    100% {
+      transform: translateX(-60%);
+    }
+  }
+
+  #train-svg {
+    animation: moveTrain 7s linear;
+    position: relative;
+    top: 440px;
+  }
+
+  #train-svg-2 {
+    animation: moveTrain2 7s linear forwards;
+    position: absolute;
+    top: 440px;
+  }
+}
+
 #train-svg-2 {
   animation: moveTrain2 7s linear forwards;
   position: absolute;
