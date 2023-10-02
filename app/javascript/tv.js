@@ -39,17 +39,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
   video.addEventListener("click", () => {
     instructions.classList.remove("d-none");
-    video.classList.add("d-none");
+    // video.classList.add("d-none");
   });
 
   tv.addEventListener("click", () => {
     instructions.classList.remove("d-none");
-    video.classList.add("d-none");
+    // video.classList.add("d-none");
   });
 
   button.addEventListener("click", () => {
     instructions.classList.add("d-none");
-    video.classList.add("d-none");
+    // video.classList.add("d-none");
   });
 
   lamp.addEventListener("click", () => {
