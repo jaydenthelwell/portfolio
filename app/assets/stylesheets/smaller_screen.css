@@ -1,17 +1,17 @@
 @media (max-width: 768px) {
   @keyframes moveTrain {
     0% {
-      transform: translateX(220%);
+      transform: translateX(120%);
     }
 
     100% {
-      transform: translateX(0%);
+      transform: translateX(30%);
     }
   }
 
   @keyframes moveTrain2 {
     0% {
-      transform: translateX(0%);
+      transform: translateX(30%);
     }
 
     100% {
@@ -20,7 +20,11 @@
   }
 
   #train-svg {
-    animation: moveTrain 5s linear infinite alternate;
+    animation: moveTrain 5s linear;
     /* top: 220px; */
+  }
+
+  #train-svg-2 {
+    animation: moveTrain2 5s linear forwards;
   }
 }
