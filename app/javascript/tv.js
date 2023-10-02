@@ -9,8 +9,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const dog = document.getElementById('dog');
 
   // instructions.classList.add("d-none");
-  light.classList.add("d-none");
-  dog.classList.add("d-none");
+  // light.classList.add("d-none");
+  // dog.classList.add("d-none");
 
   function playVid() {
     video.play();
