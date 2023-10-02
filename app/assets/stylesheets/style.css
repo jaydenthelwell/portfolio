@@ -272,8 +272,8 @@ hr{
 
 #rotate-message {
   display: none;
-  background-color: rgba(0, 0, 0, 0.9);
-  color: #fff;
+  background-color: white;
+  color: black;
   position: fixed;
   top: 0;
   left: 0;
