@@ -272,8 +272,8 @@ hr{
 
 #rotate-message {
   display: none;
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: rgb(255, 255, 255);
   position: fixed;
   top: 0;
   left: 0;
@@ -284,4 +284,5 @@ hr{
   justify-content: center;
   flex-direction: column;
   font-size: 24px;
+  font-family: "Atma";
 }
