@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Portfolio</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer">
     <%# <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=lobster"> %>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Londrina+Outline">
@@ -15,10 +15,18 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
-    <%= javascript_include_tag 'application' %>
+
+
   </head>
 
   <body>
     <%= yield %>
+    <%= javascript_include_tag 'application', "data-turbolinks-track" => true %>
+    <%= javascript_include_tag 'scroll', "data-turbolinks-track" => true %>
+    <%= javascript_include_tag 'train', "data-turbolinks-track" => true %>
+    <%= javascript_include_tag 'checkbox', "data-turbolinks-track" => true %>
+    <%= javascript_include_tag 'cloud', "data-turbolinks-track" => true %>
+    <%= javascript_include_tag 'post-it', "data-turbolinks-track" => true %>
+    <%= javascript_include_tag 'tv', "data-turbolinks-track" => true %>
   </body>
 </html>
