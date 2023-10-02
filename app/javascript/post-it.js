@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const postit2 = document.querySelector(".post-it-beach ");
   const button = document.getElementById("close-popup");
 
-  postit.classList.add("d-none");
+  // postit.classList.add("d-none");
 
   button.addEventListener("click", () => {
     console.log("Testing click");

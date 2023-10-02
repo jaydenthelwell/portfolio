@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const button = document.getElementById("close-hobbies");
   const dog = document.getElementById('dog');
 
-  hobbies.classList.add("d-none");
+  // hobbies.classList.add("d-none");
 
   stick.addEventListener("click", () => {
     console.log("Testing stick event listener");
@@ -29,11 +29,13 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("Testing stick event listener");
     interests.classList.add("checked");
     hobbies.classList.remove("d-none");
+    // button.classList.remove("d-none");
   });
   dog.addEventListener("click", () => {
     console.log("Testing stick event listener");
     interests.classList.add("checked");
     hobbies.classList.remove("d-none");
+    // button.classList.remove("d-none");
   });
   button.addEventListener("click", () => {
     hobbies.classList.add("d-none");

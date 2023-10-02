@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const dogbed = document.getElementById('dog-bed');
   const dog = document.getElementById('dog');
 
-  instructions.classList.add("d-none");
+  // instructions.classList.add("d-none");
   light.classList.add("d-none");
   dog.classList.add("d-none");
 

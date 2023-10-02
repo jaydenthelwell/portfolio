@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const button = document.getElementById("close-popup");
 
   train.classList.add("d-none");
-  parchment.classList.add("d-none");
+  // parchment.classList.add("d-none");
 
   button.addEventListener("click", () => {
     console.log("Testing click");

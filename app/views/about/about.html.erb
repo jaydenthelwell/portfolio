@@ -9,8 +9,8 @@
         Your browser does not support the video tag.
       <% end %>
     </div>
-    <div class="hobbies-popup-container">
-      <%= image_tag("hobbies.png", alt: "Hobbies", class: "d-none", id: "hobbies") %>
+    <div class="hobbies-popup-container d-none">
+      <%= image_tag("hobbies.png", alt: "Hobbies", id: "hobbies") %>
       <%= image_tag("onbutton.png", class: "close-hobbies", id: "close-hobbies")%>
     </div>
     <div>
@@ -27,7 +27,7 @@
   <%= image_tag("walking-stick.png", alt:"Walking Stick", id:"stick") %>
   <%= image_tag("dog.png", alt:"Dog", id:"dog") %>
   <%= image_tag("backpack.png", alt: "Backpack", id: "backpack") %>
-  <div class="tv-popup-container">
+  <div class="tv-popup-container d-none">
     <%= image_tag("tv-pop-up.png", alt: "Tv", id: "tv-screen") %>
     <div class="tv-content">
       <h1>Meet Me Online</h1>
