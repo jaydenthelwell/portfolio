@@ -89,30 +89,26 @@
   padding-right: 300px;
   top: 10%;
   font-size: 20px;
-  font-family: "Verdana";
+  font-family: "Atma";
+  color: #1B4262;
 }
 
 .tv-content p {
 font-size: 20px;
 text-align: left;
+color: #1B4262;
 }
-
-.tv-content li {
-  font-size: 20px;
-  text-align: left;
-  margin: 15px;
-  }
 
 .custom-checkbox {
   font-size: 18px;
   font-weight: bold;
-  color: #00c846;
+  color: #1B4262;
   margin-right: 5px;
   display: inline-block;
   vertical-align: middle;
   cursor: pointer;
   padding: 5px 5px;
-  border: 2px solid #3b45dd;
+  border: 2px solid #1B4262;
 }
 
 .checked::before {
@@ -126,4 +122,5 @@ text-align: left;
   position: absolute;
   width: 50px;
   margin-top: -27px;
+  transform: translateX(-85%);
 }

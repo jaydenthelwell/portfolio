@@ -1,5 +1,6 @@
 <div class="background">
   <div class="background-elements">
+
     <%= video_tag("about_me_vid.mp4", autoplay: true, loop: true, muted: true, playsinline: true, id: "background-video") do %>
       Your browser does not support the video tag.
     <% end %>
@@ -7,6 +8,10 @@
       <%= video_tag("tv-no-back.mp4", autoplay: true, muted: true, playsinline: true, id: "tv") do %>
         Your browser does not support the video tag.
       <% end %>
+    </div>
+    <div class="hobbies-popup-container">
+      <%= image_tag("hobbies.png", alt: "Hobbies", id: "hobbies") %>
+      <%= image_tag("onbutton.png", class: "close-hobbies", id: "close-hobbies")%>
     </div>
     <div>
       <%= image_tag("lamp.png", alt: "Lamp", id: "lamp") %>
@@ -29,12 +34,11 @@
         <p>Here, you'll find a collection of clickable objects that reveal different aspects of my life and personality.
         Navigate through this space, clicking on each object to uncover interesting facts about me.
         <p>The checklist below keeps track of your exploration, marking off items as you go.</p>
-        This interactive experience is designed to help you learn more about me. Enjoy your journey!
-        </p>
+        <p>This interactive experience is designed to help you learn more about me. Enjoy your journey!</p>
         <p onclick="toggleCheckbox(this)"><span class="custom-checkbox" id="academic"></span> Click on the backpack to learn about my academic background.</p>
         <p onclick="toggleCheckbox(this)"><span class="custom-checkbox" id="experience"></span> Explore my work experience by clicking on the hiking stick to discover my professional journey.</p>
         <p onclick="toggleCheckbox(this)"><span class="custom-checkbox" id="technologies"></span> Check out the technologies I'm proficient in by clicking on the lamp.</p>
-        <p onclick="toggleCheckbox(this)"><span class="custom-checkbox" id="cv"></span> Access my detailed CV for a comprehensive overview of my qualifications and experience.</p>
+        <p onclick="toggleCheckbox(this)"><span class="custom-checkbox" id="interests"></span> Hobbies and Interests.</p>
       <%= image_tag("onbutton.png", class: "tv-off", id: "close-popup")%>
     </div>
   </div>

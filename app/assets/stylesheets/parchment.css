@@ -19,11 +19,14 @@ padding-left: 300px;
 padding-right: 300px;
 top: 23%;
 font-size: 20px;
-font-family: "Verdana";
+font-family: "Atma";
+color: #1B4262;
 }
 
 .popup-content h1 {
   margin-bottom: 5%;
+  font-weight: thick;
+  color: #1B4262;
 }
 
 .popup-content p {
@@ -31,7 +34,9 @@ font-family: "Verdana";
 }
 
 h1 {
-  font-family: "Londrina Shadow";
+  font-family: "Atma";
+  color: #1B4262;
+  font-weight: thick;
 }
 
 /* .bottle {
