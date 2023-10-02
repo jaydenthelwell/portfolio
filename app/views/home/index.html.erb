@@ -1,0 +1,50 @@
+<div class="background" >
+  <%= video_tag("background.mp4", autoplay: true, loop: true, muted: true, playsinline: true, id: "background-video") do %>
+    Your browser does not support the video tag.
+  <% end %>
+  <%= video_tag("start.mp4", autoplay: true, loop: true, muted: true, playsinline: true, id: "closed-parchment", class: "start") do %>
+    Your browser does not support the video tag.
+  <% end %>
+  <%# <%= image_tag("start.gif", alt: "Start Button", id: "background-video", class: "start") %>
+
+  <div class="content-container">
+    <div>
+      <div class="svg-container" id='train-svg'>
+        <a id="train-link">
+          <%= content_tag :div, raw(File.read(Rails.root.join('app', 'assets', 'images', 'train4.svg'))), class: "train" %>
+        </a>
+        <%= image_tag("dooropen.mp4", alt: "Open Train Door", id: "train-door", class: "d-none train-door") %>
+      </div>
+    </div>
+    <div class="cloud-container">
+      <%= image_tag("cloud.svg", alt: "Cloud", class: "cloud", id: "cloud-svg") %>
+      <%= image_tag("cloud.svg", alt: "Cloud", class: "cloud", id: "cloud-2-svg") %>
+      <%= image_tag("cloud.svg", alt: "Cloud", class: "cloud", id: "cloud-3-svg") %>
+      <%= image_tag("cloud.svg", alt: "Cloud", class: "cloud", id: "cloud-4-svg") %>
+      <%= image_tag("cloud.svg", alt: "Cloud", class: "cloud", id: "cloud-5-svg") %>
+      <%= image_tag("cloud.svg", alt: "Cloud", class: "cloud", id: "cloud-6-svg") %>
+      <%= image_tag("cloud.svg", alt: "Cloud", class: "cloud", id: "cloud-7-svg") %>
+      <%= image_tag("cloud.svg", alt: "Cloud", class: "cloud", id: "cloud-9-svg") %>
+      <%= image_tag("cloud.svg", alt: "Cloud", class: "cloud", id: "cloud-10-svg") %>
+      <%= image_tag("cloud.svg", alt: "Cloud", class: "cloud", id: "cloud-11-svg") %>
+    </div>
+  </div>
+  <div>
+    <%# <%= image_tag("start.png", alt: "Scroll", id: "closed-parchment", class: "start") %>
+    <%= image_tag("post-it-note.png", alt: "Post-it", class: "parchment2 d-none") %>
+  </div>
+  <div class="pop-up-container">
+    <%= image_tag("post-it-note.png", alt: "Post-it", class: "parchment") %>
+    <div class="popup-content">
+      <h1>Welcome to my portfolio!</h1>
+      <p>Experience the playfulness and interactivity of my portfolio with a game-like twist.</p>
+      <p>If you wish to skip to my projects, please click the menu in the top corner. Otherwise, simply enjoy the journey at your own pace.</p>
+      <p>Click on the train to start exploring. Discover my work and enjoy the interactive journey through a beachy paradise, where creativity knows no bounds.</p>
+      <p>But wait! Before your departure, click a cloud to make this note vanish with rain.</p>
+      <%= image_tag("x.png", class: "close-popup", id: "close-popup")%>
+    </div>
+  </div>
+  <div>
+    <%= image_tag("butterfly-unscreen (3).gif", alt: "butterfly", class: "butterfly") %>
+  </div>
+</div>

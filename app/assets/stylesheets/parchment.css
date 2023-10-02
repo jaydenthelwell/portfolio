@@ -1,0 +1,91 @@
+.parchment {
+  margin: auto;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 4;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+text-align: center;
+position: fixed;
+z-index: 5;
+padding-left: 300px;
+padding-right: 300px;
+top: 23%;
+font-size: 20px;
+font-family: "Atma";
+color: #1B4262;
+}
+
+.popup-content h1 {
+  margin-bottom: 5%;
+  font-weight: thick;
+  color: #1B4262;
+}
+
+.popup-content p {
+  margin-bottom: 5%;
+}
+
+h1 {
+  font-family: "Atma";
+  color: #1B4262;
+  font-weight: thick;
+}
+
+/* .bottle {
+  position: fixed;
+  top: 87%;
+  width: 120px;
+  left: 70%;
+  animation: shake 1.5s linear infinite;
+} */
+
+@keyframes shake {
+  0% {
+    transform: rotate(5deg);
+  }
+
+  25% {
+      transform: rotate(-6deg);
+  }
+
+  50% {
+      transform: rotate(5deg);
+  }
+
+  75% {
+      transform: rotate(-6deg);
+  }
+
+  100% {
+      transform: rotate(5deg);
+  }
+}
+
+.parchment2 {
+  position: fixed;
+  top: 90%;
+  width: 60px;
+  left: 15%;
+}
+
+@keyframes disintegrate {
+  0% {
+      opacity: 1;
+      transform: scale(1);
+  }
+  100% {
+      opacity: 0;
+      : scale(0.2);
+  }
+}
+.close-popup {
+  margin: -40px;
+}

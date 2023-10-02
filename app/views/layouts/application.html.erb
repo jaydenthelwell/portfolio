@@ -3,11 +3,26 @@
   <head>
     <title>Portfolio</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer">
+    <%# <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=lobster"> %>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Londrina+Outline">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Londrina+Shadow">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Atma">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atma:wght@700&display=swap">
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <%= javascript_include_tag 'application' %>
+    <%= javascript_include_tag 'train' %>
+    <%= javascript_include_tag 'cloud' %>
+    <%= javascript_include_tag 'scroll' %>
+    <%= javascript_include_tag 'post-it' %>
+    <%= javascript_include_tag 'tv' %>
+    <%= javascript_include_tag 'checkbox' %>
+    <%= javascript_include_tag 'hobbies' %>
   </head>
 
   <body>

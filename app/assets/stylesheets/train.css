@@ -1,0 +1,53 @@
+@keyframes moveTrain {
+  0% {
+    transform: translateX(80%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes moveTrain2 {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-80%);
+  }
+}
+
+#train-svg {
+  animation: moveTrain 7s linear;
+  position: relative;
+  top: 440px;
+}
+
+#train-svg-2 {
+  animation: moveTrain2 7s linear forwards;
+  position: absolute;
+  top: 440px;
+}
+
+.svg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.train-door {
+  width: 225px;
+  position: absolute;
+  top: 50%;
+  left: 50.45%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.d-none {
+  visibility: hidden;
+}
