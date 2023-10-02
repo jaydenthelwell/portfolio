@@ -11,6 +11,15 @@ document.addEventListener("DOMContentLoaded", function () {
   // instructions.classList.add("d-none");
   // light.classList.add("d-none");
   // dog.classList.add("d-none");
+  video.addEventListener("click", () => {
+    instructions.classList.remove("d-none");
+    // video.classList.add("d-none");
+  });
+
+  tv.addEventListener("click", () => {
+    instructions.classList.remove("d-none");
+    // video.classList.add("d-none");
+  });
 
   function playVid() {
     video.play();
@@ -36,16 +45,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   playVid();
-
-  video.addEventListener("click", () => {
-    instructions.classList.remove("d-none");
-    // video.classList.add("d-none");
-  });
-
-  tv.addEventListener("click", () => {
-    instructions.classList.remove("d-none");
-    // video.classList.add("d-none");
-  });
 
   button.addEventListener("click", () => {
     instructions.classList.add("d-none");

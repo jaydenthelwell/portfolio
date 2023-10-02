@@ -1,3 +1,11 @@
+<link rel="preload" href="<%= asset_path('tv.js') %>" as="script">
+<link rel="preload" href="<%= asset_path('checkbox.js') %>" as="script">
+
+<%# Include JavaScript files %>
+<%= javascript_include_tag 'tv' %>
+<%= javascript_include_tag 'checkbox' %>
+<%# <%= javascript_include_tag 'hobbies' %>
+
 <div class="background">
   <div class="background-elements">
 
