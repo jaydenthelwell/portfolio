@@ -18,6 +18,28 @@
   }
 }
 
+@media (max-width: 768px) {
+  @keyframes moveTrain {
+    0% {
+      transform: translateX(80%);
+    }
+
+    100% {
+      transform: translateX(calc(50% - 50vw));
+    }
+  }
+
+  @keyframes moveTrain2 {
+    0% {
+      transform: translateX(calc(50% - 50vw));
+    }
+
+    100% {
+      transform: translateX(-80%);
+    }
+  }
+}
+
 #train-svg {
   animation: moveTrain 7s linear;
   position: relative;
