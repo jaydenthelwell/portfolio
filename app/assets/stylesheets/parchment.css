@@ -1,26 +1,32 @@
 .parchment {
-  margin: auto;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   position: fixed;
-  background: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
   z-index: 4;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .popup-content {
-text-align: center;
-position: fixed;
-z-index: 5;
-padding-left: 300px;
-padding-right: 300px;
-top: 23%;
-font-size: 20px;
-font-family: "Atma";
-color: #1B4262;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Atma";
+  position: relative;
+  z-index: 5;
+  max-width: 80%;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.close-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
 }
 
 .popup-content h1 {
@@ -85,7 +91,4 @@ h1 {
       opacity: 0;
       : scale(0.2);
   }
-}
-.close-popup {
-  margin: -40px;
 }
