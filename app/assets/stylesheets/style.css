@@ -286,3 +286,7 @@ hr{
   font-size: 24px;
   font-family: "Atma";
 }
+
+.rotate-icon {
+  width: 300px;
+}
