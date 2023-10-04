@@ -103,6 +103,10 @@
   #door img {
     width: 20%!important;
   }
+
+  .boat {
+    width: 20%;
+  }
 }
 
 @keyframes bounce {
