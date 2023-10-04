@@ -86,7 +86,7 @@ h1 {
 }
 
 .parchment2 {
-  position: fixed;
+  position: absolute;
   top: 90%;
   width: 60px;
   left: 15%;

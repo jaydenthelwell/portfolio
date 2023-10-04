@@ -5,6 +5,7 @@ body {
 
 .background {
   position: relative;
+  filter: "1";
 }
 
 #background-video-index {
