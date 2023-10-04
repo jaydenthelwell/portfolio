@@ -8,6 +8,12 @@
   z-index: 0;
 }
 
+@media screen and (max-width: 700px) {
+  #background-video {
+    top: -5%;
+  }
+}
+
 .boat {
   position: absolute;
   top: 58%;
