@@ -1,14 +1,31 @@
 #tv {
   position: absolute;
-  transform: translateY(177.5%);
-  left: 40.6%;
+  top: 37.1%;
+  left: 42.5%;
   opacity: 0.6;
-  width: 272px;
+  width: 15%;
   height: auto;
+  z-index: 1;
+}
+
+#tv-off {
+  position: absolute;
+  top: 36.5%;
+  left: 42%;
+  width: 16%;
+  height: auto;
+  z-index: 0;
+}
+
+.tv-off {
+  position: absolute;
+  width: 50px;
+  margin-top: -27px;
+  transform: translateX(-85%);
 }
 
 #tv-screen {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -18,85 +35,89 @@
   background: rgba(0, 0, 0, 0.7);
 }
 
-#tv-off {
+.popup-content-tv {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Atma";
   position: absolute;
-  transform: translateY(160%);
-  left: 40%;
-  width: 290px;
-  height: auto;
-  z-index: -1;
+  z-index: 5;
+  max-width: 80%;
+  padding: 20%;
+}
+
+.popup-content-tv p {
+  font-size: 20px;
+  text-align: left;
+  color: #1B4262;
+  }
+
+@media screen and (max-width: 700px) {
+  .popup-content-tv {
+    font-size: 10px;
+    padding-top: 100px;
+  }
+
+  .tv-off {
+    width: 20px;
+    margin-top: -4px;
+  }
+  .popup-content-tv p {
+    font-size: 10px;
+  }
 }
 
 #lamp {
   position: absolute;
-  transform: translateY(125%);
+  top: 45%;
   left: 23%;
-  width: 120px;
+  width: 8%;
   height: auto;
   z-index: 1;
 }
 
 #dog-bed {
   position: absolute;
-  transform: translateY(630%);
-  left: 10%;
-  width: 140px;
+  top: 77%;
+  left: 11%;
+  width: 12%;
   height: auto;
-  transform-origin: top left;
+  z-index: 0;
 }
 
 #light {
   position: absolute;
-  transform: translateY(695%);
+  top: 53.5%;
   left: 24%;
-  width: 100px;
+  width: 6%;
   height: auto;
   z-index: 1;
 }
 
 #stick {
   position: absolute;
-  transform: translateY(180%);
+  top: 60%;
   left: 0%;
-  width: 40px;
+  width: 3%;
   height: auto;
   z-index: 1;
 }
 
 #dog {
   position: absolute;
-  transform: translateY(1000%);
-  left: 11%;
-  width: 130px;
+  top: 80%;
+  left: 12%;
+  width: 11%;
   height: auto;
   z-index: 1;
 }
 
 #backpack {
   position: absolute;
-  transform: translateY(290%);
+  top: 55%;
   left: 63%;
   width: 115px;
   height: auto;
   z-index: 1;
-}
-
-.tv-content {
-  text-align: center;
-  position: fixed;
-  z-index: 5;
-  padding-left: 300px;
-  padding-right: 300px;
-  top: 10%;
-  font-size: 20px;
-  font-family: "Atma";
-  color: #1B4262;
-}
-
-.tv-content p {
-font-size: 20px;
-text-align: left;
-color: #1B4262;
 }
 
 .custom-checkbox {
@@ -116,11 +137,4 @@ color: #1B4262;
   display: inline-block;
   vertical-align: middle;
   font-size: 18px;
-}
-
-.tv-off {
-  position: absolute;
-  width: 50px;
-  margin-top: -27px;
-  transform: translateX(-85%);
 }
