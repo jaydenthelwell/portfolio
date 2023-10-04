@@ -39,6 +39,12 @@
   height: auto;
 }
 
+@media (max-width: 320px) {
+  .svg-container {
+    margin-left: 20%;
+  }
+}
+
 .train-door {
   width: 225px;
   position: absolute;
