@@ -8,11 +8,6 @@
   }
 }
 
-.train {
-  max-width: 100%;
-  height: auto;
-}
-
 @keyframes moveTrain2 {
   0% {
     transform: translateX(0%);
@@ -33,15 +28,6 @@
   width: 900px;
 }
 
-@media screen and (max-width: 700px) {
-  .train-image {
-    width: 2000px;
-  }
-  .train-door {
-    width: 500px;
-  }
-}
-
 .svg-container {
   display: flex;
   justify-content: center;
@@ -50,6 +36,44 @@
   width: 100%;
   height: auto;
   top: 55%
+}
+
+@media screen and (max-width: 700px) {
+  .train-image {
+    width: 2000px;
+  }
+  #train-door.train-door {
+    width: 500px;
+  }
+  .svg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 400%;
+    height: auto;
+    top: 55%
+  }
+
+  @keyframes moveTrain {
+    0% {
+      transform: translateX(80%);
+    }
+
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes moveTrain2 {
+    0% {
+      transform: translateX(0%);
+    }
+
+    100% {
+      transform: translateX(-80%);
+    }
+  }
 }
 
 .train-door {
