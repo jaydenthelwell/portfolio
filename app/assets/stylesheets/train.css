@@ -21,7 +21,7 @@
 #train-svg {
   animation: moveTrain 7s linear;
   position: relative;
-  top: 440px;
+  /* top: 50%; */
 }
 
 /* #train-svg-2 {
@@ -34,9 +34,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: absolute;
   width: 100%;
   height: auto;
+  top: 55%
 }
 
 @media (max-width: 320px) {

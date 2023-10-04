@@ -18,7 +18,7 @@
   top: 35%;
   left: 60%;
   width: 8%;
-  animation: boat 30s linear forwards;
+  animation: boat 10s linear forwards;
 }
 
 @media screen and (max-width: 700px) {
@@ -27,7 +27,7 @@
       transform: translateX(200%) ;
     }
     100% {
-      transform: translateX(100%);
+      transform: translateX(180%);
       width: 0px;
     }
   }
