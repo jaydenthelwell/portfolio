@@ -21,5 +21,6 @@
 @media screen and (max-width: 700px) {
   .close-hobbies {
     width: 20px;
+    top: 80%;
   }
 }
