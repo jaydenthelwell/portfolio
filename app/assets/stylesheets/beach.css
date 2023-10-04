@@ -23,7 +23,7 @@
 
 @media screen and (max-width: 700px) {
   .background_boat {
-    animation: boat 40s linear forwards;
+    animation: boat 100s linear forwards;
   }
 
   @keyframes boat {
@@ -125,7 +125,6 @@
     top: 65%;
     left: 40%;
   }
-
 }
 
 @keyframes bounce {
