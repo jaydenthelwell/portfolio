@@ -18,10 +18,14 @@
   top: 35%;
   left: 60%;
   width: 8%;
-  animation: boat 10s linear forwards;
+  animation: boat 100s linear forwards;
 }
 
 @media screen and (max-width: 700px) {
+  .background_boat {
+    animation: boat 40s linear forwards;
+  }
+
   @keyframes boat {
     0% {
       transform: translateX(200%) ;
@@ -90,7 +94,7 @@
 
 .sign-post {
   position: absolute;
-  width: 10%;
+  width: 15%;
   left: 45%;
   top: 45%;
 }
@@ -117,10 +121,11 @@
   }
 
   .boat {
-    width: 20%;
+    width: 25%;
     top: 65%;
     left: 40%;
   }
+
 }
 
 @keyframes bounce {
