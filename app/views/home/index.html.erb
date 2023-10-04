@@ -10,7 +10,7 @@
     <div class="svg-container">
       <div id='train-svg'>
         <%= content_tag :a, href: "beach" do %>
-          <%= content_tag :div, raw(File.read(Rails.root.join('app', 'assets', 'images', 'train4.svg'))), class: "train" %>
+        <%= image_tag("train4.svg", alt: "Train", class: "train-image") %>
         <% end %>
         <%= image_tag("door-open-unscreen.gif", alt: "Open Train Door", id: "train-door", class: "d-none train-door") %>
       </div>

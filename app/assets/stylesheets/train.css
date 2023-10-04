@@ -29,6 +29,19 @@
   top: 50%;
 }
 
+.train-image {
+  width: 900px;
+}
+
+@media screen and (max-width: 700px) {
+  .train-image {
+    width: 2000px;
+  }
+  .train-door {
+    width: 500px;
+  }
+}
+
 .svg-container {
   display: flex;
   justify-content: center;
