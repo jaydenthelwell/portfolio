@@ -1,5 +1,5 @@
 #hobbies {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -11,7 +11,7 @@
 
 .close-hobbies {
   position: absolute;
-  top: 75%;
+  top: 77%;
   left: 47%;
   width: 40px;
   height: auto;
@@ -21,6 +21,5 @@
 @media screen and (max-width: 700px) {
   .close-hobbies {
     width: 20px;
-    top: 80%;
   }
 }
