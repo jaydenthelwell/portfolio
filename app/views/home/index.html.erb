@@ -1,13 +1,12 @@
 <div class="container">
   <div class="background">
-    <%= video_tag("background.mp4", autoplay: true, loop: true, muted: true, playsinline: true, id: "background-video") do %>
+    <%= video_tag("background.mp4", autoplay: true, loop: true, muted: true, playsinline: true, id: "background-video-index") do %>
       Your browser does not support the video tag.
     <% end %>
     <%= video_tag("start.mp4", autoplay: true, loop: true, muted: true, playsinline: true, id: "closed-parchment", class: "start") do %>
       Your browser does not support the video tag.
     <% end %>
     <%# <%= image_tag("start.gif", alt: "Start Button", id: "background-video", class: "start") %>
-  <div class="content-container">
     <div class="svg-container">
       <div id='train-svg'>
         <%= content_tag :a, href: "beach" do %>
@@ -28,7 +27,7 @@
       <%= image_tag("cloud.svg", alt: "Cloud", class: "cloud", id: "cloud-10-svg") %>
       <%= image_tag("cloud.svg", alt: "Cloud", class: "cloud", id: "cloud-11-svg") %>
     </div>
-  </div>
+
     <div>
       <%# <%= image_tag("start.png", alt: "Scroll", id: "closed-parchment", class: "start") %>
       <%= image_tag("post-it-note.png", alt: "Post-it", class: "parchment2 d-none") %>

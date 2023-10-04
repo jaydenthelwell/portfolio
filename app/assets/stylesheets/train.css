@@ -8,6 +8,11 @@
   }
 }
 
+.train {
+  max-width: 100%;
+  height: auto;
+}
+
 @keyframes moveTrain2 {
   0% {
     transform: translateX(0%);
@@ -24,12 +29,6 @@
   top: 50%;
 }
 
-/* #train-svg-2 {
-  animation: moveTrain2 7s linear forwards;
-  position: absolute;
-  top: 440px;
-} */
-
 .svg-container {
   display: flex;
   justify-content: center;
@@ -43,10 +42,6 @@
 @media (max-width: 320px) {
   .svg-container {
     margin-left: 50%;
-  }
-
-  #train-svg {
-    width: 200px;
   }
 }
 
