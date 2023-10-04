@@ -11,9 +11,9 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
-  z-index: -1;
+  z-index: 0;
 }
 
 @keyframes moveCloud {
@@ -222,15 +222,6 @@ body {
   top: -30px;
   /* left: 50px; */
 }
-/* For medium-sized screens (e.g., tablets) */
-@media (min-width: 769px) and (max-width: 1024px) {
-  /* CSS rules for medium-sized screens */
-}
-
-/* For larger screens (e.g., desktops) */
-@media (min-width: 1025px) {
-  /* CSS rules for larger screens */
-}
 
 hr{
   width: 50px;
@@ -250,14 +241,6 @@ hr{
   to {
   transform: rotate(105deg) translateX(calc(100vh + 20px));
   }
-}
-
-.bottle {
-  position: fixed;
-  top: 45%;
-  left: 55%;
-  width: 15%;
-  animation: shake 1.5s linear infinite;
 }
 
 .start {
