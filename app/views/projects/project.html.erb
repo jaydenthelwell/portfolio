@@ -1,22 +1,20 @@
 <div class="background">
   <%= image_tag("project-island.png", alt: "Project Island", id: "background-video") %>
-  <div class="project_title">
-    <h1>Project Island</h1>
+  <h1 class="projects_title">Project Island</h1>
+  <div id="jam">
+    <%= link_to("http://www.jamwithme.site/") do %>
+      <%= image_tag("Jam.png", alt: "Home") %>
+    <% end %>
+    <div id="music">
+      <%= image_tag("music-notes.png", alt: "Music-notes") %>
+    </div>
   </div>
-</div>
-<div id="jam">
-  <%= link_to("http://www.jamwithme.site/") do %>
-    <%= image_tag("Jam.png", alt: "Home") %>
-  <% end %>
-  <div id="music">
-    <%= image_tag("music-notes.png", alt: "Music-notes") %>
-  </div>
-</div>
-<div id="groove">
-  <%= link_to("https://groove-ltd-d56e445f9f55.herokuapp.com/") do %>
-    <%= image_tag("groove.png", alt: "Home") %>
-  <% end %>
-  <div id="instrument">
-    <%= image_tag("instrument.png", alt: "Music-notes") %>
+  <div id="groove">
+    <%= link_to("https://groove-ltd-d56e445f9f55.herokuapp.com/") do %>
+      <%= image_tag("groove.png", alt: "Home") %>
+    <% end %>
+    <div id="instrument">
+      <%= image_tag("instrument.png", alt: "Music-notes") %>
+    </div>
   </div>
 </div>

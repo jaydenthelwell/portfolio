@@ -1,18 +1,26 @@
-#projects-title {
-  font-size: 70px;
+.projects_title {
+  font-size: 50px;
   font-family: "Atma";
   color: #1B4262;
-  padding-left: 5%;
+  position: absolute;
+  top: 0%;
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .projects_title{
+    font-size: 35px;
+  }
 }
 
 #jam {
-  position: relative;
-  width: 100px;
-  height: 100px;
+  position: absolute;
+  width: 15%;
+  height: 15%;
   transition: 0.3s;
   text-align: center;
-  left: 29%;
-  transform: translateY(190%);
+  left: 25%;
+  top: 44%;
 }
 
 #music {
@@ -41,13 +49,13 @@
 }
 
 #groove {
-  position: relative;
-  width: 100px;
-  height: 100px;
+  position: absolute;
+  width: 15%;
+  height: 15%;
   transition: 0.3s;
   text-align: center;
-  left: 58%;
-  transform: translateY(270%);
+  left: 54%;
+  top: 64%;
 }
 
 #groove img {
