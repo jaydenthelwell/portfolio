@@ -155,3 +155,26 @@
     font-size: 12px;
   }
 } */
+.popup-content-beach {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Atma";
+  position: absolute;
+  z-index: 5;
+  max-width: 80%;
+  padding: 5%;
+  padding-top: 10%;
+}
+@media screen and (max-width: 700px) {
+  .popup-content-beach p {
+    font-size: 6px !important;
+  }
+
+  .popup-content-beach h1 {
+    font-size: 20px !important;
+  }
+
+  .close-popup {
+    width: 30px !important;
+  }
+}
