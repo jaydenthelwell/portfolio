@@ -20,8 +20,12 @@
 
 #train-svg {
   animation: moveTrain 7s linear;
-  position: relative;
-  /* top: 50%; */
+  position: absolute;
+  top: 50%;
+}
+
+.train {
+  width: 20%;
 }
 
 /* #train-svg-2 {
