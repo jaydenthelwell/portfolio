@@ -1,12 +1,12 @@
 .boat {
-  position: fixed;
+  position: absolute;
   top: 58%;
   left: 35%;
   width: 35%;
 }
 
 .beach_ball {
-  position: fixed;
+  position: absolute;
   top: 70%;
   left: 80%;
   width: 5%;
@@ -14,7 +14,7 @@
 }
 
 .background_boat {
-  position: fixed;
+  position: absolute;
   top: 35%;
   left: 60%;
   width: 8%;
@@ -51,7 +51,7 @@
 }
 
 .sunset-cloud-1 {
-  position: fixed;
+  position: absolute;
   left: 30%;
   width: 25%;
   top: -10%;
@@ -59,7 +59,7 @@
 }
 
 .sunset-cloud-2 {
-  position: fixed;
+  position: absolute;
   left: 75%;
   width: 20%;
   top: 0%;
@@ -67,7 +67,7 @@
 }
 
 .jungle {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -77,27 +77,32 @@
 }
 
 .sign-post {
-  position: fixed;
-  width: 180px;
+  position: absolute;
+  width: 10%;
   left: 45%;
   top: 45%;
 }
 
 #door {
-  position: fixed;
-  width: 80px;
-  top: 42.5%;
-  left: 19.8%;
-  transition: 0.8s;
+  position: absolute;
+  top: 41%;
+  left: 20%;
 }
 
 #door img {
   visibility: hidden;
-  width: 75px;
+  width: 43%;
 }
 
-#door:hover img {
-  visibility: visible;
+@media screen and (max-width: 700px) {
+  #door {
+    top: 40.6% !important;
+    left: 20%!important;
+  }
+
+  #door img {
+    width: 20%!important;
+  }
 }
 
 @keyframes bounce {
@@ -113,14 +118,14 @@
 }
 
 .post-it-beach {
-  position: fixed;
-  width: 65px;
+  position: absolute;
+  width: 4%;
   top: 43%;
   left: 13.8%;
 }
 
 .post-it-text {
-  position: fixed;
+  position: absolute;
   width: 65px;
   top: 43%;
   left: 13.8%;

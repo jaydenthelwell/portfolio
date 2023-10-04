@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   train.parentElement.addEventListener("click", () => {
     if (animation1end) {
-      train.id = "train-svg-2";
+      // train.id = "train-svg-2";
       train.style.animation = "moveTrain2 7s linear forwards";
 
       console.log("Starting Animation 2");
