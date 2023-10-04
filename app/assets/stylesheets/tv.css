@@ -53,17 +53,21 @@
 
 @media screen and (max-width: 700px) {
   .popup-content-tv {
-    position: fixed;
-    font-size: 10px;
-    padding-top: 100px;
+    position: fixed !important;
+    font-size: 10px !important;
+    padding-top: 100px !important;
+    max-width: 80% !important;
   }
 
+  .popup-content-tv h1 {
+    font-size: 20px !important;
+  }
   .tv-off {
-    width: 20px;
-    margin-top: -4px;
+    width: 20px !important;
+    margin-top: -4px !important;
   }
   .popup-content-tv p {
-    font-size: 10px;
+    font-size: 8px !important;
   }
 }
 
