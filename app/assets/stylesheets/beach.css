@@ -21,6 +21,18 @@
   animation: boat 100s linear forwards;
 }
 
+@media screen and (max-width: 700px) {
+  @keyframes boat {
+    0% {
+      transform: translateX(200%) ;
+    }
+    100% {
+      transform: translateX(-450%);
+      width: 0px;
+    }
+  }
+}
+
 @keyframes boat {
   0% {
     transform: translateX(200%) ;
