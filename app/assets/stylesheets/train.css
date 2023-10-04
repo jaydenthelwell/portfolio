@@ -24,10 +24,6 @@
   top: 50%;
 }
 
-.train {
-  width: 20%;
-}
-
 /* #train-svg-2 {
   animation: moveTrain2 7s linear forwards;
   position: absolute;
@@ -47,6 +43,10 @@
 @media (max-width: 320px) {
   .svg-container {
     margin-left: 50%;
+  }
+
+  #train-svg {
+    width: 200px;
   }
 }
 
