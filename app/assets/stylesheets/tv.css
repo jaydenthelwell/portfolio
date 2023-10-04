@@ -124,7 +124,6 @@
   height: auto;
   z-index: 1;
 }
-
 .custom-checkbox {
   font-size: 18px;
   font-weight: bold;
@@ -133,8 +132,8 @@
   display: inline-block;
   vertical-align: middle;
   cursor: pointer;
-  padding: 5px 5px;
   border: 2px solid #1B4262;
+  transition: all 0.3s ease;
 }
 
 .checked::before {
@@ -142,4 +141,5 @@
   display: inline-block;
   vertical-align: middle;
   font-size: 18px;
+  transform: scale(0.8);
 }
