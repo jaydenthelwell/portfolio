@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const train = document.querySelector("#train-svg");
+
   let animation1end = false;
   let animation2end = false;
 
