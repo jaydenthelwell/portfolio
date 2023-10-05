@@ -10,7 +10,7 @@ body {
 
 .background {
   position: relative;
-  filter: "1";
+  /* filter: "1"; */
 }
 
 #background-video-index {
@@ -72,7 +72,7 @@ body {
 
 .butterfly {
   animation: flyButterfly 20s linear infinite;
-  width: 60px;
+  width: 3%;
   position: absolute;
   top: 500px;
 }

@@ -2,11 +2,6 @@
 <html>
   <head>
     <title>Portfolio</title>
-      <% if controller_name == 'home' && action_name == 'index' %>
-        <meta name="viewport" content="width=device-width, initial-scale=0.25">
-      <% else %>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-      <% end %>
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <%# <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=lobster"> %>
@@ -24,7 +19,7 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-
+    <%= viewport_meta_tag %>
   </head>
 
   <body>
