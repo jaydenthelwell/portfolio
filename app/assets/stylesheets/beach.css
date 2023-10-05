@@ -174,24 +174,13 @@
 
 .close-popup-beach {
   position: absolute;
-  top: 83%;
+  top: 80%;
   z-index: 4;
   left: 64%;
 }
 
-/* @media screen and (max-width: 700px) {
-  .popup-content-beach {
-    max-width: 80% !important;
-  }
-  .popup-content-beach p {
-    font-size: 6px !important;
-  }
-
-  .popup-content-beach h1 {
-    font-size: 20px !important;
-  }
-
+@media screen and (max-width: 700px) {
   .close-popup-beach {
-    width: 80px !important;
+    top: 83% !important;
   }
-} */
+}
