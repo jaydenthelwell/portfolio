@@ -4,6 +4,10 @@ body {
   padding: 0;
 }
 
+.pop-up-container{
+  position: relative;
+}
+
 .background {
   position: relative;
   filter: "1";
