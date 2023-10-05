@@ -1,0 +1,47 @@
+<div class="navbar-container">
+  <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+    <div class="container-fluid">
+      <%= link_to "/", class: "navbar-brand" do %>
+        <%= image_tag "https://img.icons8.com/ios/50/home--v3.png", alt:"home--v3" %>
+      <% end %>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <%= link_to "https://www.linkedin.com/in/jayden-thelwell-34923326b/", class: "navbar-brand" do %>
+                <%= image_tag "https://img.icons8.com/ios/50/linkedin.png", style:"width: 25px", alt:"linkedin"%>
+              <% end %>
+            </li>
+            <li class="nav-item">
+              <%= link_to "https://github.com/jaydenthelwell", class: "navbar-brand" do %>
+                <%= image_tag "https://img.icons8.com/ios/50/github--v1.png", style:"width: 25px", alt:"github--v1"%>
+              <% end %>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Options <i class="fas fa-chevron-down"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                  <%= link_to "Beach", "/beach", class: "nav-link" %>
+                  <%= link_to "About Me", "/about", class: "nav-link" %>
+                  <%= link_to "Project Island", "/projects", class: "nav-link" %>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Contact <i class="fas fa-chevron-down"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                <%= link_to "Email", "#", class: "dropdown-item" %>
+                <%= link_to "07794 873250", "#", class: "dropdown-item" %>
+              </div>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
