@@ -1,14 +1,14 @@
 @keyframes setInitialPositionCloud {
   0% {
-    transform: translateX(70%);
+    transform: translateX(300%);
   }
   100% {
-    transform: translateX(400%);
+    transform: translateX(500%);
   }
 }
 @keyframes setInitialPositionCloud1 {
   0% {
-    transform: translateX(90%);
+    transform: translateX(300%);
   }
   100% {
     transform: translateX(500%);
@@ -16,7 +16,7 @@
 }
 @keyframes setInitialPositionCloud2 {
   0% {
-    transform: translateX(10%);
+    transform: translateX(100%);
   }
   100% {
     transform: translateX(700%);
@@ -25,28 +25,25 @@
 
 #cloud-9-svg {
   animation: setInitialPositionCloud 100s linear forwards;
-  width: 600px;
+  width: 350px;
   position: absolute;
-  top: -40px;
-  /* left: 80px; */
+  top: -20px;
 }
 
 #cloud-10-svg {
   animation: setInitialPositionCloud1 140s linear forwards;
-  width: 800px;
+  width: 200px;
   position: absolute;
-  top: -150px;
-  left: 100px;
-  /* left: 900px; */
+  top: 60px;
 }
 
 #cloud-11-svg {
   animation: setInitialPositionCloud2 200s linear forwards;
-  width: 400px;
+  width: 150px;
   position: absolute;
-  top: -30px;
-  /* left: 50px; */
+  top: 0px;
 }
+
 
 @media screen and (max-width: 700px) {
   #cloud-9-svg {
@@ -80,7 +77,7 @@
       transform: translateX(260%);
     }
     100% {
-      transform: translateX(400%);
+      transform: translateX(600%);
     }
   }
   @keyframes setInitialPositionCloud1 {
@@ -166,15 +163,15 @@
 
 #cloud-svg {
   animation: moveCloud 200s linear infinite;
-  width: 600px;
+  width: 320px;
   position: absolute;
-  top: -40px;
+  top: 10px;
   /* left: 80px; */
 }
 
 #cloud-2-svg {
   animation: moveCloud2 360s linear infinite;
-  width: 800px;
+  width: 300px;
   position: absolute;
   top: -150px;
   left: 100px;
@@ -183,7 +180,7 @@
 
 #cloud-3-svg {
   animation: moveCloud3 300s linear infinite;
-  width: 400px;
+  width: 300px;
   position: absolute;
   top: -30px;
   /* left: 50px; */
@@ -197,14 +194,14 @@
 }
 #cloud-5-svg {
   animation: moveCloud5 500s linear infinite;
-  width: 450px;
+  width: 150px;
   position: absolute;
   top: -90px;
 }
 
 #cloud-6-svg {
   animation: moveCloud6 500s linear infinite;
-  width: 650px;
+  width: 250px;
   position: absolute;
   top: -70px;
 }
