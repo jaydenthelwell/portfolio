@@ -25,6 +25,10 @@
   width: 10%;
 }
 
+.home {
+  max-width: 55%;
+}
+
 /* #navbar-container-2 {
   font-size: 60px;
 } */
