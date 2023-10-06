@@ -1,5 +1,5 @@
 #hobbies {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -10,10 +10,10 @@
 }
 
 .close-hobbies {
-  position: absolute;
-  top: 77%;
+  position: fixed;
+  top: 80%;
   left: 47%;
-  width: 40px;
+  width: 3%;
   height: auto;
   z-index: 10;
 }

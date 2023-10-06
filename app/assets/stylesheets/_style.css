@@ -127,3 +127,10 @@ hr{
 .rotate-icon {
   width: 300px;
 }
+
+@font-face {
+  font-family: 'MaryKate';
+  src: url('../fonts/MaryKate.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}

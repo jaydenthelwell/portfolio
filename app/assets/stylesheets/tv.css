@@ -37,37 +37,41 @@
 
 .popup-content-tv {
   text-align: center;
-  font-size: 20px;
-  font-family: "Atma";
+  font-size: 125%;
+  font-family: "atma";
   position: absolute;
   z-index: 5;
   max-width: 80%;
-  padding: 20%;
+  top: 50%;
+  color: #1B4262;
+  z-index: 1;
 }
 
 .popup-content-tv p {
-  font-size: 20px;
   text-align: left;
-  color: #1B4262;
-  }
+}
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
   .popup-content-tv {
-    position: fixed !important;
-    font-size: 10px !important;
-    padding-top: 100px !important;
-    max-width: 80% !important;
+    font-size: 11px !important;
+    z-index: 1;
   }
 
-  .popup-content-tv h1 {
-    font-size: 20px !important;
-  }
-  .tv-off {
-    width: 20px !important;
-    margin-top: -4px !important;
-  }
   .popup-content-tv p {
-    font-size: 6px !important;
+    margin: 0%;
+    font-size: 11px !important;
+  }
+}
+
+@media screen and ((min-width: 750px) and (max-width: 1000px)) {
+  .popup-content-tv {
+    font-size: 15px !important;
+    z-index: 1;
+  }
+
+  .popup-content-tv p {
+    margin: 0%;
+    font-size: 15px !important;
   }
 }
 
