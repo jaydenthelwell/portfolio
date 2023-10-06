@@ -1,7 +1,7 @@
 <div class="navbar-container">
   <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
     <div class="container-fluid">
-      <%= link_to "/", class: "navbar-brand" do %>
+      <%= link_to "/", class: "home" do %>
         <%= image_tag "https://img.icons8.com/ios/50/home--v3.png", alt:"home--v3" %>
       <% end %>
 
@@ -13,12 +13,12 @@
         <ul class="navbar-nav me-auto">
             <li class="nav-item">
               <%= link_to "https://www.linkedin.com/in/jayden-thelwell-34923326b/", class: "navbar-brand" do %>
-                <%= image_tag "https://img.icons8.com/ios/50/linkedin.png", style:"width: 25px", alt:"linkedin"%>
+                <%= image_tag "https://img.icons8.com/ios/50/linkedin.png", alt:"linkedin"%>
               <% end %>
             </li>
             <li class="nav-item">
               <%= link_to "https://github.com/jaydenthelwell", class: "navbar-brand" do %>
-                <%= image_tag "https://img.icons8.com/ios/50/github--v1.png", style:"width: 25px", alt:"github--v1"%>
+                <%= image_tag "https://img.icons8.com/ios/50/github--v1.png", alt:"github--v1"%>
               <% end %>
             </li>
             <li class="nav-item dropdown">
@@ -36,8 +36,8 @@
                 Contact <i class="fas fa-chevron-down"></i>
               </a>
               <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                <%= link_to "Email", "#", class: "dropdown-item" %>
-                <%= link_to "07794 873250", "#", class: "dropdown-item" %>
+                <%= link_to "Email", "#", class: "nav-link dropdown-item" %>
+                <%= link_to "07794 873250", "#", class: "nav-link dropdown-item" %>
               </div>
             </li>
         </ul>

@@ -1,6 +1,7 @@
 .navbar-lewagon {
   justify-content: space-between;
   background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+  padding: 10px;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -11,23 +12,61 @@
   width: 100%;
 }
 
+
 .navbar-container {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1;
+  /* font-size: 60px; */
 }
 
-#navbar-container-2 {
+/* #navbar-container-2 {
   font-size: 60px;
+} */
+
+@media only screen and (min-width: 2600px) {
+  .navbar-lewagon {
+    padding: 50px;
+  }
+
+  .navbar-container {
+    font-size: 70px;
+  }
+
+  .navbar-lewagon .navbar-brand img {
+    width: 120%;
+    padding-left: 3rem;
+    padding-right: 5rem;
+
+  }
+  .home img {
+    width: 260%;
+  }
+
+  .navbar-expand-sm .navbar-nav .nav-link {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 25px;
+  }
+  .navbar-light .navbar-nav .show>.nav-link {
+    font-size: 47px;
+  }
+
+  .dropdown-item {
+    font-size: 47px;
+  }
 }
 
-/* @media only screen and (max-width: 700px) {
-  .navbar-container {
-    font-size: 60px;
+@media screen and (max-width: 700px) {
+  .home img {
+    width: 70%;
   }
-} */
+  .navbar-lewagon .navbar-brand img {
+    width: 25px;
+  }
+}
 
 .container {
   max-width: 200%;
