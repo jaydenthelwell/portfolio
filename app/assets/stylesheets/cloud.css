@@ -45,22 +45,22 @@
 }
 
 
-@media screen and (max-width: 700px) {
+@media screen and (min-width: 2600px) {
   #cloud-9-svg {
     width: 400px;
     top: 150px;
-    animation: setInitialPositionCloud 40s linear forwards;
+    animation: setInitialPositionCloud 80s linear forwards;
   }
 
   #cloud-10-svg {
     width: 500px;
-    top: 0px;
+    top: 160px;
     animation: setInitialPositionCloud1 50s linear forwards;
   }
 
   #cloud-11-svg {
     width: 300px;
-    top: 100px;
+    top: 240px;
     animation: setInitialPositionCloud2 90s linear forwards;
   }
 
@@ -82,7 +82,7 @@
   }
   @keyframes setInitialPositionCloud1 {
     0% {
-      transform: translateX(330%);
+      transform: translateX(380%);
     }
     100% {
       transform: translateX(400%);
@@ -90,7 +90,7 @@
   }
   @keyframes setInitialPositionCloud2 {
     0% {
-      transform: translateX(150%);
+      transform: translateX(50%);
     }
     100% {
       transform: translateX(400%);
