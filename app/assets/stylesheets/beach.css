@@ -65,36 +65,34 @@
 
 @keyframes sunsetCloud {
   0% {
-    transform: translateX(0%);
+    transform: translateX(110%);
   }
   100% {
-    transform: translateX(200%);
+    transform: translateX(300%);
   }
 }
 
 @keyframes sunsetCloud2 {
   0% {
-    transform: translateX(0%);
+    transform: translateX(350%);
   }
   100% {
-    transform: translateX(130%);
+    transform: translateX(400%);
   }
 }
 
 .sunset-cloud-1 {
   position: absolute;
-  left: 30%;
   width: 25%;
   top: -10%;
-  animation: sunsetCloud 200s linear infinite;
+  animation: sunsetCloud 100s linear infinite;
 }
 
 .sunset-cloud-2 {
   position: absolute;
-  left: 75%;
   width: 20%;
   top: 0%;
-  animation: sunsetCloud2 130s linear infinite;
+  animation: sunsetCloud2 30s linear infinite;
 }
 
 .sign-post {
@@ -128,7 +126,7 @@
   .boat {
     width: 30%;
     top: 60%;
-    left: 45%;
+    left: 42%;
   }
 }
 

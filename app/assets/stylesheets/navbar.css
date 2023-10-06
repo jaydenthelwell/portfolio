@@ -9,7 +9,7 @@
 }
 
 .navbar-lewagon .navbar-brand img {
-  width: 100%;
+  width: 65%;
 }
 
 
@@ -39,10 +39,10 @@
     width: 120%;
     padding-left: 3rem;
     padding-right: 5rem;
-
   }
+
   .home img {
-    width: 260%;
+    width: 25%;
   }
 
   .navbar-expand-sm .navbar-nav .nav-link {
@@ -61,10 +61,24 @@
 
 @media screen and (max-width: 700px) {
   .home img {
-    width: 70%;
+    width: 9%;
   }
+
+  .home {
+    max-width: 55%;
+  }
+
   .navbar-lewagon .navbar-brand img {
     width: 25px;
+  }
+
+  .nav-link {
+    padding-bottom: 0px;
+  }
+
+  .dropdown-menu {
+    font-size: 12px;
+    min-width: 6.5rem;
   }
 }
 
