@@ -63,7 +63,7 @@
   }
 }
 
-@media screen and ((min-width: 750px) and (max-width: 1000px)) {
+@media screen and (min-width: 750px) and (max-width: 1000px) {
   .popup-content-tv {
     font-size: 15px !important;
     z-index: 1;
