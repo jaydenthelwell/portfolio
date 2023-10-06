@@ -187,3 +187,19 @@
     top: 87% !important;
   }
 }
+
+.beach-hut {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  width: 30%;
+  z-index: 1;
+}
+
+#beach_hut_door {
+  position: absolute;
+  top: 26.58%;
+  left: 5.1%;
+  width: 29.5%;
+  z-index: 1;
+}

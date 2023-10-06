@@ -1,9 +1,10 @@
 <div class="container-beach">
   <div class="background">
     <%= image_tag("beach_background.png", alt: "Beach", id: "background-video") %>
-    <div id="door">
+    <%= image_tag("hut.png", alt: "Beach Hut", class: "beach-hut") %>
+    <div>
       <%= link_to("about") do %>
-      <%= image_tag("beach_door_open.png", alt: "Door") %>
+        <%= image_tag("beach_hut_door_open.png", alt: "Beach Hut", id: "beach_hut_door", class: "d-none") %>
       <% end %>
     </div>
     <div>

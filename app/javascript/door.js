@@ -1,9 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const door = document.getElementById("door");
+  const beachHut = document.querySelector(".beach-hut");
+  const door = document.getElementById("beach_hut_door");
 
-  door.addEventListener("click", () => {
+  beachHut.addEventListener("click", () => {
     console.log("Testing if door is clickable");
-    const doorImg = door.querySelector("img");
-    doorImg.style.visibility = "visible";
+    door.classList.remove("d-none");
+    beachHut.classList.add("d-none");
   });
 });
