@@ -83,6 +83,7 @@
   top: 5%;
   z-index: 7;
   left: 1%;
+  color: black;
   box-shadow: 6px 6px 0 #B798C7;
   width: 11%;
   /* transform: skewX(-15deg); */
