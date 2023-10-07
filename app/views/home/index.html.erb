@@ -1,10 +1,10 @@
 <div class="container">
   <%= render 'shared/navbar' %>
   <div class="background">
-    <%= video_tag("background.mp4", autoplay: true, loop: true, muted: true, playsinline: true, id: "background-video-index") do %>
+    <%= video_tag("background.mp4",  controls: false, autoplay: true, loop: true, muted: true, playsinline: true, id: "background-video-index") do %>
       Your browser does not support the video tag.
     <% end %>
-    <%= video_tag("start.mp4", autoplay: true, loop: true, muted: true, playsinline: true, id: "start-clicked", class: "start") do %>
+    <%= video_tag("start.mp4", controls: false, autoplay: true, loop: true, muted: true, playsinline: true, id: "start-clicked", class: "start") do %>
       Your browser does not support the video tag.
     <% end %>
     <%# <%= image_tag("start.gif", alt: "Start Button", id: "background-video", class: "start") %>
