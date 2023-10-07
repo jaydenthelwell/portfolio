@@ -32,7 +32,7 @@
   height: 100%;
   object-fit: cover;
   z-index: 1;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .popup-content-tv {

@@ -8,7 +8,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const dogbed = document.getElementById('dog-bed');
   const interests = document.getElementById('interests');
   const hobbies = document.querySelector(".hobbies-popup-container");
-  const button = document.getElementById("close-hobbies");
+  const skills = document.querySelector(".technical-skills-popup-container");
+  const button = document.getElementById("close-option");
+  const skillsButton = document.getElementById("skills-close-option");
   const dog = document.getElementById('dog');
 
   // hobbies.classList.add("d-none");
@@ -24,6 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
   lamp.addEventListener("click", () => {
     console.log("Testing stick event listener");
     technologies.classList.add("checked");
+    skills.classList.remove("d-none");
   });
   dogbed.addEventListener("click", () => {
     console.log("Testing stick event listener");
@@ -38,6 +41,12 @@ document.addEventListener("DOMContentLoaded", () => {
     // button.classList.remove("d-none");
   });
   button.addEventListener("click", () => {
+    // skills.classList.add("d-none");
     hobbies.classList.add("d-none");
+    console.log("Testing");
+  });
+  skillsButton.addEventListener("click", () => {
+    skills.classList.add("d-none");
+    console.log("Testing");
   });
 });

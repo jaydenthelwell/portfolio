@@ -9,7 +9,7 @@
 }
 
 .navbar-lewagon .navbar-brand img {
-  width: 65%;
+  width: 10%;
 }
 
 .navbar-container {
@@ -22,16 +22,29 @@
 }
 
 .home img {
-  width: 10%;
+  width: 20%;
 }
 
 .home {
   max-width: 55%;
 }
 
-/* #navbar-container-2 {
-  font-size: 60px;
-} */
+.contact_button {
+  box-shadow: 6px 6px 0 #B798C7;
+  width: 120%;
+  border-radius: 22px;
+  background: white;
+  border: white;
+  text-decoration: none;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+.contact_button:hover {
+  box-shadow: 6px 6px 0 #b151e1;
+  transform: translateY(-7px);
+}
 
 @media only screen and (min-width: 2600px) {
   .navbar-lewagon {
@@ -43,18 +56,18 @@
   }
 
   .navbar-lewagon .navbar-brand img {
-    width: 120%;
-    padding-left: 3rem;
-    padding-right: 5rem;
+    width: 60%;
+    padding-left: 5rem;
+    padding-right: 2rem;
   }
 
   .home img {
-    width: 25%;
+    width: 70%;
   }
 
   .navbar-expand-sm .navbar-nav .nav-link {
     padding-right: 2rem;
-    padding-left: 2rem;
+    padding-left: 6rem;
     padding-top: 25px;
   }
   .navbar-light .navbar-nav .show>.nav-link {
@@ -64,7 +77,14 @@
   .dropdown-item {
     font-size: 47px;
   }
+
+  .contact_button {
+    font-size: 60px;
+    box-shadow: 24px 24px 0 #B798C7;
+    border-radius: 80px;
+  }
 }
+
 
 @media screen and (max-width: 700px) {
   .home img {
