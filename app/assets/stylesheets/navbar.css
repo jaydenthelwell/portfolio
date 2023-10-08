@@ -34,7 +34,7 @@
 }
 
 .contact_button {
-  box-shadow: 6px 6px 0 #B798C7;
+  box-shadow: 0px 6px 6px #fb602d;
   width: 120%;
   border-radius: 22px;
   background: white;
@@ -42,12 +42,12 @@
   border: white;
   text-decoration: none;
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: bolder;
 }
 
 .contact_button:hover {
-  box-shadow: 6px 6px 0 #b151e1;
+  box-shadow: 0px 6px 0 #fb602d;
   transform: translateY(-7px);
 }
 
@@ -84,9 +84,14 @@
   }
 
   .contact_button {
-    font-size: 60px;
-    box-shadow: 24px 24px 0 #B798C7;
+    font-size: 48px;
+    box-shadow: 0px 15px 15px #fb602d;
     border-radius: 80px;
+  }
+
+  .contact_button:hover {
+    box-shadow: 0px 24px 0 #fb602d;
+    transform: translateY(-28px);
   }
 }
 
