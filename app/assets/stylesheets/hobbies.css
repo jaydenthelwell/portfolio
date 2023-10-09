@@ -22,7 +22,7 @@
 .close-option {
   position: fixed;
   top: 80%;
-  left: 47%;
+  left: 48%;
   width: 3%;
   height: auto;
   z-index: 10;
@@ -30,11 +30,25 @@
 
 #skills-close-option {
   position: fixed;
-  top: 82%;
+  top: 81%;
   left: 49%;
   width: 3%;
   height: auto;
   z-index: 10;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  #skills-close-option {
+    top: 88%;
+    width: 2.6%;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 800px) {
+  #skills-close-option {
+    top: 86%;
+    width: 2.6%;
+  }
 }
 
 @media screen and (max-width: 700px) {
