@@ -295,7 +295,7 @@
   z-index: 3;
   left: 1%;
   color: black;
-  box-shadow: 0px 6px 6px #60e4ea;
+  box-shadow: 0px 6px 6px #00a0a8;
   width: 13%;
   /* transform: skewX(-15deg); */
   /* transform: translate(-50%, -50%); */
@@ -309,7 +309,7 @@
 }
 
 .project_back_button:hover {
-  box-shadow: 0px 10px 0px #60e4ea;
+  box-shadow: 0px 10px 0px #00a0a8;
   transform: translateY(-7px);
 }
 
