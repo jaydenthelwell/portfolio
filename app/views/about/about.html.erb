@@ -1,5 +1,5 @@
 <div class="background">
-  <%= link_to ("beach") do %>
+  <%= link_to("beach") do %>
       <button class="back_button">BACK<i class="fa-solid fa-caret-up fa-rotate-270" style="color: #000000;"></i></button>
   <% end %>
   <div class="background-elements">
@@ -18,6 +18,14 @@
     <div class="technical-skills-popup-container d-none">
       <%= image_tag("technical_skills.png", alt: "technical-skills", id: "technical-skills-option") %>
       <%= image_tag("onbutton.png", class: "close-option", id: "skills-close-option")%>
+    </div>
+    <div class="education-popup-container d-none">
+      <%= image_tag("education.png", alt: "education", id: "education-option") %>
+      <%= image_tag("onbutton.png", class: "close-option", id: "education-close-option")%>
+    </div>
+    <div class="work-popup-container d-none">
+      <%= image_tag("work_experience.png", alt: "work experience", id: "work-option") %>
+      <%= image_tag("onbutton.png", class: "close-option", id: "work-close-option")%>
     </div>
     <div>
       <%= image_tag("lamp.png", alt: "Lamp", id: "lamp") %>
