@@ -341,15 +341,18 @@
   .back_button {
     font-size: 15px;
   }
+  .project_back_button {
+    font-size: 15px;
+  }
 }
-@media screen and (min-width: 1000px) {
+/* @media screen and (min-width: 1000px) {
   .project_back_button {
     width: 8%;
   }
   .back_button {
     width: 8%;
   }
-}
+} */
 /*
 .fa-caret-up {
   width: 1%;
