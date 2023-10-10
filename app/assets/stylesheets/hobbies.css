@@ -42,22 +42,22 @@
 }
 
 .close-option {
-  position: fixed;
-  top: 80%;
-  left: 48%;
+  position: absolute;
+  top: 7%;
+  z-index: 23;
+  left: 82%;
   width: 3%;
-  height: auto;
-  z-index: 10;
 }
 
-#skills-close-option {
+
+/* #skills-close-option {
   position: fixed;
   top: 81%;
   left: 48.5%;
   width: 3%;
   height: auto;
   z-index: 10;
-}
+} */
 
 /* @media screen and (min-width: 800px) and (max-width: 1000px) {
   #skills-close-option {
@@ -73,8 +73,29 @@
   }
 } */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
   .close-option {
-    width: 20px;
+    top: 15%;
+    /* width: 20px; */
   }
 }
+
+.tv-popup-container {
+  position: relative;
+}
+
+.work-popup-container {
+  position: relative;
+}
+
+.education-popup-container {
+  position: relative;
+}
+
+.technical-skills-popup-container {
+  position: relative;
+}
+
+/* .hobbies-popup-container {
+  position: relative;
+} */

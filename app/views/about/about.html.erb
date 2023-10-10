@@ -12,20 +12,36 @@
       <% end %>
     </div>
     <div class="hobbies-popup-container d-none">
-      <%= image_tag("hobbies.png", alt: "Hobbies", id: "hobbies-option") %>
-      <%= image_tag("onbutton.png", class: "close-option", id: "close-option")%>
+      <div class="parchment">
+        <%= image_tag("hobbies.png", alt: "Hobbies", id: "hobbies-option") %>
+        <div class="popup-content-beach">
+        <%= image_tag("cross.png", class: "close-option", id: "close-option")%>
+        </div>
+      </div>
     </div>
     <div class="technical-skills-popup-container d-none">
-      <%= image_tag("technical_skills.png", alt: "technical-skills", id: "technical-skills-option") %>
-      <%= image_tag("onbutton.png", class: "close-option", id: "skills-close-option")%>
+      <div class="parchment">
+        <%= image_tag("technical_skills.png", alt: "technical-skills", id: "technical-skills-option") %>
+        <div class="popup-content-beach">
+        <%= image_tag("cross.png", class: "close-option", id: "skills-close-option")%>
+        </div>
+      </div>
     </div>
     <div class="education-popup-container d-none">
-      <%= image_tag("education.png", alt: "education", id: "education-option") %>
-      <%= image_tag("onbutton.png", class: "close-option", id: "education-close-option")%>
+      <div class="parchment">
+        <%= image_tag("education.png", alt: "education", id: "education-option") %>
+        <div class="popup-content-beach">
+        <%= image_tag("cross.png", class: "close-option", id: "education-close-option")%>
+        </div>
+      </div>
     </div>
     <div class="work-popup-container d-none">
-      <%= image_tag("work_experience.png", alt: "work experience", id: "work-option") %>
-      <%= image_tag("onbutton.png", class: "close-option", id: "work-close-option")%>
+      <div class="parchment">
+        <%= image_tag("work_experience.png", alt: "work experience", id: "work-option") %>
+        <div class="popup-content-beach">
+        <%= image_tag("cross.png", class: "close-option", id: "work-close-option")%>
+        </div>
+      </div>
     </div>
     <div>
       <%= image_tag("lamp.png", alt: "Lamp", id: "lamp") %>
@@ -50,9 +66,9 @@
           <p onclick="toggleCheckbox(this)"><span class="custom-checkbox" id="technologies"></span> Check out the technologies I'm proficient in by clicking on the lamp.</p>
           <p onclick="toggleCheckbox(this)"><span class="custom-checkbox" id="interests"></span> Hobbies and Interests.</p>
       </div>
-    </div>
-    <div>
-      <%= image_tag("onbutton.png", class: "close-option", id: "close-popup") %>
+      <div>
+        <%= image_tag("cross.png", class: "close-option", id: "close-popup") %>
+      </div>
     </div>
   </div>
 </div>
