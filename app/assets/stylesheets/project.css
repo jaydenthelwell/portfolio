@@ -1,12 +1,11 @@
-.projects_title {
+/* .projects_title {
   font-size: 330%;
   font-family: "Atma";
   color: #1B4262;
   position: absolute;
   top: 15%;
   padding-left: 10px;
-}
-
+} */
 @media screen and (max-width: 700px) {
   .projects_title{
     font-size: 35px;
@@ -43,9 +42,42 @@
   max-height: 100%;
 }
 
-#jam:hover #music {
-  transform: translateX(0);
-  visibility: visible;
+.description-box {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-40%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 13px;
+  opacity: 0.9;
+  z-index: 1000;
+  white-space: normal;
+  width: 600px;
+  overflow: hidden;
+  display: block;
+}
+
+.description-box-2 {
+  position: absolute;
+  text-align: left;
+  top: -300%;
+  left: 50%;
+  transform: translateX(-40%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 13px;
+  opacity: 0.9;
+  z-index: 1000;
+  white-space: normal;
+  width: 600px;
+  overflow: hidden;
+  display: block;
 }
 
 #groove {
