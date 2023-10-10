@@ -90,12 +90,6 @@ hr {
   animation: rain 1s linear infinite;
 }
 
-@media screen and (min-width: 2600px) {
-  hr {
-    border-right-width: 100px !important;
-  }
-}
-
 @keyframes rain {
   from {
   transform: rotate(105deg) translateX(0);

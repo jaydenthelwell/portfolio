@@ -23,7 +23,13 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function rain () {
-    const counter = 100;
+    let counter;
+    if (window.innerWidth > 2600){
+      counter = 200;
+    }
+    else {
+      counter = 100;
+    }
 
     for (let i = 0; i < counter; i++) {
       const hrElement = document.createElement("HR");
