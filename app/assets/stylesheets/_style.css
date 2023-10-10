@@ -25,16 +25,7 @@ body {
   z-index: 0;
 }
 
-@media screen and (max-width: 700px) {
-  .background_boat {
-      animation: boat 100s linear forwards;
-    }
-    #background-video-index {
-      /* width: 400%; */
-      height: auto;
-      top: -5%;
-    }
-  }
+
 
 @keyframes flyButterfly {
   0% {

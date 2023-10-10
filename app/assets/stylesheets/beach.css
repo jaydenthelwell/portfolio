@@ -41,9 +41,9 @@
   animation: boat 100s linear forwards;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1000px) {
   .background_boat {
-    animation: boat 100s linear forwards;
+    animation: boat 30s linear forwards;
   }
 
   @keyframes boat {
@@ -51,7 +51,7 @@
       transform: translateX(200%) ;
     }
     100% {
-      transform: translateX(180%);
+      transform: translateX(190%);
     }
   }
 }
