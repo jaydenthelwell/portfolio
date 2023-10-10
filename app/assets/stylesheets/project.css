@@ -289,6 +289,30 @@
   visibility: visible;
 }
 
+.project_back_button {
+  position: absolute;
+  top: 10%;
+  z-index: 3;
+  left: 1%;
+  color: black;
+  box-shadow: 0px 6px 6px #60e4ea;
+  width: 13%;
+  /* transform: skewX(-15deg); */
+  /* transform: translate(-50%, -50%); */
+  border-radius: 22px;
+  background: white;
+  border: white;
+  text-decoration: none;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.project_back_button:hover {
+  box-shadow: 0px 10px 0px #60e4ea;
+  transform: translateY(-7px);
+}
+
 .back_button {
   position: absolute;
   top: 10%;
@@ -319,6 +343,9 @@
   }
 }
 @media screen and (min-width: 1000px) {
+  .project_back_button {
+    width: 8%;
+  }
   .back_button {
     width: 8%;
   }
