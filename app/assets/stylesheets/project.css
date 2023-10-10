@@ -45,7 +45,7 @@
 .description-box {
   position: absolute;
   text-align: left;
-  top: 100%;
+  top: 50%;
   left: 50%;
   transform: translateX(-40%);
   background-color: #333;
@@ -78,6 +78,51 @@
   width: 600px;
   overflow: hidden;
   display: block;
+}
+
+@media screen and (max-width: 1000px) {
+  .description-box {
+    /* display: none; */
+    position: fixed;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    transform: translateX(0%);
+    background-color: #fff;
+    color: #212121;
+    overflow: hidden;
+    font-family: "Atma";
+    font-size: 11px;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+  .description-box-2 {
+    /* display: none; */
+    position: fixed;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    transform: translateX(0%);
+    background-color: #fff;
+    color: #212121;
+    overflow: hidden;
+    font-family: "Atma";
+    font-size: 10px;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .description-box.opened {
+    transform: translateX(0%);
+  }
+
+  .map-object {
+    cursor: pointer;
+  }
 }
 
 #groove {
@@ -148,3 +193,8 @@
 .fa-caret-up {
   width: 1%;
 } */
+
+a {
+  color: rgb(228, 92, 92);
+  text-decoration: none;
+}
