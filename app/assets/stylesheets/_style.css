@@ -118,16 +118,16 @@ hr {
   justify-content: center;
   flex-direction: column;
   font-size: 24px;
-  font-family: "Atma";
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .rotate-icon {
   width: 300px;
 }
 
-@font-face {
+/* @font-face {
   font-family: 'MaryKate';
   src: url('../fonts/MaryKate.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
-}
+} */
