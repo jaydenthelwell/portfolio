@@ -104,11 +104,12 @@
 
 #stick {
   position: absolute;
-  top: 60%;
-  left: 0%;
-  width: 3%;
+  top: 53%;
+  left: 85%;
+  width: 2%;
   height: auto;
   z-index: 1;
+  transform: rotate(8deg);
 }
 
 #dog {

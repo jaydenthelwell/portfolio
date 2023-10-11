@@ -20,7 +20,7 @@
 
 .boat {
   position: absolute;
-  top: 58%;
+  top: 73%;
   left: 35%;
   width: 35%;
 }
@@ -154,10 +154,10 @@
   left: 14%;
   z-index: 5000;
 }
-
+/*
 .post-it-container {
   position: relative;
-}
+} */
 
 /* .post-it-text {
   position: absolute;

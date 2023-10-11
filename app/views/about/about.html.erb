@@ -13,7 +13,7 @@
     </div>
     <div class="hobbies-popup-container d-none">
       <div class="parchment">
-        <%= image_tag("hobbies.png", alt: "Hobbies", id: "hobbies-option") %>
+        <%= image_tag("hobbies.png", alt: "Hobbies", class: "parchment", id: "hobbies-option") %>
         <div class="popup-content-beach">
         <%= image_tag("cross.png", class: "close-option", id: "close-option")%>
         </div>
@@ -21,7 +21,7 @@
     </div>
     <div class="technical-skills-popup-container d-none">
       <div class="parchment">
-        <%= image_tag("technical_skills.png", alt: "technical-skills", id: "technical-skills-option") %>
+        <%= image_tag("technical_skills.png", alt: "technical-skills", class: "parchment", id: "technical-skills-option") %>
         <div class="popup-content-beach">
         <%= image_tag("cross.png", class: "close-option", id: "skills-close-option")%>
         </div>
@@ -29,7 +29,7 @@
     </div>
     <div class="education-popup-container d-none">
       <div class="parchment">
-        <%= image_tag("education.png", alt: "education", id: "education-option") %>
+        <%= image_tag("education.png", alt: "education", class: "parchment", id: "education-option") %>
         <div class="popup-content-beach">
         <%= image_tag("cross.png", class: "close-option", id: "education-close-option")%>
         </div>
@@ -37,7 +37,7 @@
     </div>
     <div class="work-popup-container d-none">
       <div class="parchment">
-        <%= image_tag("work_experience.png", alt: "work experience", id: "work-option") %>
+        <%= image_tag("work_experience.png", alt: "work experience", class: "parchment", id: "work-option") %>
         <div class="popup-content-beach">
         <%= image_tag("cross.png", class: "close-option", id: "work-close-option")%>
         </div>
@@ -59,12 +59,12 @@
   <%= image_tag("backpack.png", alt: "Backpack", id: "backpack") %>
   <div class="tv-popup-container d-none">
     <div class="parchment">
-      <%= image_tag("meet_me_online_here.png", alt: "Meet Me Online", id: "tv-screen") %>
+      <%= image_tag("meet_me_online_here.png", alt: "Meet Me Online", class: "parchment", id: "tv-screen") %>
       <div class="popup-content-tv">
           <p onclick="toggleCheckbox(this)"><span class="custom-checkbox" id="academic"></span> Click on the backpack to learn about my academic background.</p>
           <p onclick="toggleCheckbox(this)"><span class="custom-checkbox" id="experience"></span> Explore my work experience by clicking on the hiking stick.</p>
           <p onclick="toggleCheckbox(this)"><span class="custom-checkbox" id="technologies"></span> Check out the technologies I'm proficient in by clicking on the lamp.</p>
-          <p onclick="toggleCheckbox(this)"><span class="custom-checkbox" id="interests"></span> Hobbies and Interests.</p>
+          <p onclick="toggleCheckbox(this)"><span class="custom-checkbox" id="interests"></span> Select the dog bed to explore my hobbies and interests..</p>
       </div>
       <div>
         <%= image_tag("cross.png", class: "close-option", id: "close-popup") %>

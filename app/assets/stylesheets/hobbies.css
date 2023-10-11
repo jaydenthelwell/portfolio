@@ -1,5 +1,5 @@
 #hobbies-option {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -9,7 +9,7 @@
   background: rgba(0, 0, 0, 0.7);
 }
 #technical-skills-option {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -20,7 +20,7 @@
 }
 
 #education-option {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -31,7 +31,7 @@
 }
 
 #work-option {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -43,7 +43,7 @@
 
 .close-option {
   position: absolute;
-  top: 7%;
+  top: 15%;
   z-index: 23;
   left: 82%;
   width: 3%;
@@ -80,10 +80,10 @@
   }
 }
 
-.tv-popup-container {
+/* .tv-popup-container {
   position: relative;
-}
-
+} */
+/*
 .work-popup-container {
   position: relative;
 }
@@ -94,7 +94,7 @@
 
 .technical-skills-popup-container {
   position: relative;
-}
+} */
 
 /* .hobbies-popup-container {
   position: relative;
