@@ -179,7 +179,7 @@
 .close-popup-beach {
   position: absolute;
   top: 87%;
-  z-index: 4;
+  z-index: 11;
   left: 67%;
   width: 3%;
 }
