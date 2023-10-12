@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
     speech.addEventListener("click", () => {
       if (wordIndex === 4) {
         setTimeout(startTextAnimation, 1500);
-        // wordIndex++;
+        wordIndex++;
         console.log("Text cycle completed.");
       }
     });

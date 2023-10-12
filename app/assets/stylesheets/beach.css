@@ -33,6 +33,38 @@
   animation: bounce 2s infinite;
 }
 
+.background_boat {
+  position: absolute;
+  display: none;
+  top: 35%;
+  left: 60%;
+  width: 8%;
+  animation: boat 100s linear forwards;
+}
+
+@media screen and (max-width: 1000px) {
+
+  @keyframes boat {
+    0% {
+      transform: translateX(200%) ;
+    }
+    100% {
+      transform: translateX(190%);
+    }
+  }
+}
+
+@keyframes boat {
+  0% {
+    transform: translateX(200%) ;
+  }
+  100% {
+    transform: translateX(-900%);
+    width: 0px;
+  }
+}
+
+
 @keyframes sunsetCloud {
   0% {
     transform: translateX(110%);
