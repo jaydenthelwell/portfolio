@@ -30,9 +30,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     speech.addEventListener("click", () => {
       if (wordIndex === 4) {
-        setTimeout(startTextAnimation, 1500);
-        wordIndex++;
-        console.log("Text cycle completed.");
+        wordIndex = 0;
+        startTextAnimation();
       }
     });
   }
@@ -57,13 +56,15 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   train.parentElement.addEventListener("click", () => {
-    if (animation1end) {
+    if ((animation1end) && (wordIndex === 4)) {
       // train.id = "train-svg-2";
       train.style.animation = "moveTrain2 7s linear forwards";
-
+      speech.style.opacity = "0";
       console.log("Starting Animation 2");
-    } else {
-      console.log("Animation 1 has not ended yet");
+    }
+
+    else {
+      console.log("Animation 1 or text cycle has not ended yet");
     }
   });
 });
