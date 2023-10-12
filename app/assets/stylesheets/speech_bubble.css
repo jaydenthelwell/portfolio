@@ -1,0 +1,160 @@
+.speech-container {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  opacity: 0;
+  transition: opacity 3s;
+  animation: bubble 10s linear infinite;
+}
+@keyframes bubble {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(10px);
+  }
+  20% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(10px);
+  }
+  40% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  60% {
+    transform: translateY(0);
+  }
+  70% {
+    transform: translateY(10px);
+  }
+  80% {
+    transform: translateY(0);
+  }
+  90% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+.speech-container.show {
+  opacity: 1;
+}
+
+h6 {
+  z-index: 10;
+  font-family: "atma";
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.speech-bubble {
+  position: absolute;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  border-radius: 50%;
+  padding:20px;
+  border-radius:30px;
+  min-width:40px;
+  max-width:220px;
+  min-height:40px;
+  margin:20px;
+  /* border: groove; */
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
+  position: relative;
+}
+
+/* #text-placeholder {
+  color: white;
+} */
+
+.writing-animation {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: text-write 3s steps(30, end) forwards;
+}
+
+@keyframes text-write {
+  to {
+    width: 100%;
+  }
+}
+
+.speech-bubble:before,
+.speech-bubble:after {
+  content:"";
+  background-color:#fff;
+  border-radius:50%;
+  display:block;
+  position:absolute;
+
+  z-index:2;
+}
+.speech-bubble:before {
+  width:44px;
+  height:44px;
+  top:-12px;
+  left:28px;
+  box-shadow:-50px 30px 0 -12px #fff;
+}
+.speech-bubble:after {
+  bottom:-10px;
+  right:26px;
+  width:30px;
+  height:30px;
+  box-shadow:40px -34px 0 0 #fff,
+          -28px -6px 0 -2px #fff,
+          40px 25px 0 -6px rgb(255, 255, 255, 0.9),
+          70px 40px 0 -8px rgb(255, 255, 255, 0.8);
+}
+
+.sm-bubble {
+  position: absolute;
+  /* left: 70%; */
+  background-color: white;
+  border-radius: 20px;
+  width: 20px;
+  height: 20px;
+  left: 120%;
+  top: 135%;
+  border: groove;
+  border-color: black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.md-bubble {
+  position: absolute;
+  left: 95%;
+  top: 120%;
+  background-color: white;
+  border-radius: 30px;
+  width: 30px;
+  height: 30px;
+  border: groove;
+  border-color: black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.lg-bubble {
+  position: absolute;
+  left: 76%;
+  top: 95%;
+  background-color: white;
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+  border: groove;
+  border-color: black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}

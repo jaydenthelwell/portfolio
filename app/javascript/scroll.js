@@ -9,17 +9,19 @@ document.addEventListener("DOMContentLoaded", function () {
   train.style.animation = "none";
   // parchment.classList.add("d-none");
 
-  button.addEventListener("click", () => {
-    console.log("Testing click");
-    parchment.classList.add("d-none");
-    train.style.animation = "moveTrain 7s linear";
-    train.classList.remove("d-none");
-    parchment2.classList.remove("d-none");
-  });
+  // button.addEventListener("click", () => {
+  //   console.log("Testing click");
+  //   parchment.classList.add("d-none");
+  //   train.style.animation = "moveTrain 7s linear";
+  //   train.classList.remove("d-none");
+  //   parchment2.classList.remove("d-none");
+  // });
 
   start.addEventListener("click", () => {
-    parchment.classList.remove("d-none");
+    // parchment.classList.remove("d-none");
     start.classList.add("d-none");
+    train.style.animation = "moveTrain 7s linear";
+    train.classList.remove("d-none");
   });
 
   parchment2.addEventListener("click", () => {
