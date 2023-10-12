@@ -5,6 +5,6 @@ document.addEventListener("DOMContentLoaded", function () {
   beachHut.addEventListener("click", () => {
     console.log("Testing if door is clickable");
     door.classList.remove("d-none");
-    beachHut.classList.add("d-none");
+    // beachHut.classList.add("d-none");
   });
 });
