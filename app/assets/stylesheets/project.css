@@ -136,7 +136,7 @@
     color: #212121;
     overflow: hidden;
     font-family: "Roboto condensed";
-    font-size: 10px;
+    font-size: 11px;
     transition: transform 0.3s ease-in-out;
     z-index: 1;
     padding: 20px;
@@ -153,7 +153,7 @@
     color: #212121;
     overflow: hidden;
     font-family: "Roboto condensed";
-    font-size: 10px;
+    font-size: 11px;
     transition: transform 0.3s ease-in-out;
     z-index: 1;
     padding: 20px;
