@@ -5,12 +5,14 @@ document.addEventListener("DOMContentLoaded", function () {
   let animation1end = false;
   let animation2end = false;
 
-  const words = ["Hi, I'm Jayden", "Welcome to my portfolio ✨", "To skip to my projects, select 'Options', then 'Project Island'.", "Otherwise, enjoy the journey at your own pace.", "Click the train to move on to the next stage."];
+  const words = ["Hi, I'm Jayden", "Welcome to my portfolio!", "To skip to my projects, select 'Options', then 'Project Island'.", "Otherwise, enjoy the journey at your own pace.", "Click the train to move on to the next stage."];
   let wordIndex = 0;
 
   function startTextAnimation() {
     const text = document.getElementById("text-placeholder");
     const word = words[wordIndex];
+    text.style.color = "black"
+
     let index = 0;
 
     const timer = setInterval(function () {
@@ -25,7 +27,16 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       }
     }, 100);
+
+    speech.addEventListener("click", () => {
+      if (wordIndex === 4) {
+        setTimeout(startTextAnimation, 1500);
+        // wordIndex++;
+        console.log("Text cycle completed.");
+      }
+    });
   }
+
 
   train.addEventListener("animationend", (event) => {
     if (event.animationName === "moveTrain") {
