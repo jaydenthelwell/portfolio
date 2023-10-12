@@ -125,6 +125,16 @@ hr {
   width: 300px;
 }
 
+@media screen and (min-width: 2600px) {
+  .rotate-icon{
+    width: 1200px;
+  }
+
+  #rotate-message {
+    font-size: 80px;
+  }
+}
+
 /* @font-face {
   font-family: 'MaryKate';
   src: url('../fonts/MaryKate.woff2') format('woff2');
