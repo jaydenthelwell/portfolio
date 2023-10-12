@@ -189,9 +189,11 @@
 
 .beach-hut {
   position: absolute;
+  visibility: visible;
   top: 25%;
   left: 5%;
   width: 30%;
+  z-index: 10;
 }
 
 #beach_hut_door {
