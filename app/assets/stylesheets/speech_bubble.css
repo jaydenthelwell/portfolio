@@ -18,14 +18,56 @@ h2 {
   font-family: "Roboto Condensed";
 }
 
-@media screen and (min-width: 700px) {
+
+.speech-bubble {
+  position: absolute;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  border-radius: 50%;
+  padding: 20px;
+  border-radius: 30px;
+  min-width: 200px;
+  max-width: 280px;
+  min-height: 80px;
+  margin: 20px;
+  /* border: groove; */
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
+  position: relative;
+}
+
+@media screen and (min-width: 2600px) and (max-width: 3190px) {
   .speech-container {
-    top: 50%;
-    left: 35%;
+    top: 45%;
+    left: 27%;
   }
 
   h2 {
-    font-size: 50px ;
+    font-size: 60px ;
+  }
+
+  .speech-bubble {
+    max-width: 500px;
+    min-width: 400px;
+  }
+}
+
+@media screen and (min-width: 3200px)  {
+  .speech-container {
+    top: 55%;
+    left: 30%;
+  }
+
+  h2 {
+    font-size: 60px ;
+  }
+
+  .speech-bubble {
+    max-width: 600px;
+    min-width: 500px;
   }
 }
 
@@ -65,25 +107,6 @@ h2 {
   }
 }
 
-.speech-bubble {
-  position: absolute;
-  z-index: 4;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: white;
-  border-radius: 50%;
-  padding: 20px;
-  border-radius: 30px;
-  min-width: 200px;
-  max-width: 280px;
-  min-height: 80px;
-  margin: 20px;
-  /* border: groove; */
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
-  position: relative;
-}
 
 /* #text-placeholder {
   color: white;
