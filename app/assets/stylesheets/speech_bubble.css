@@ -18,7 +18,7 @@ h2 {
   font-family: "Roboto Condensed";
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (min-width: 700px) {
   .speech-container {
     top: 50%;
     left: 35%;
