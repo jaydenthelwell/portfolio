@@ -115,8 +115,8 @@ h6 {
   height:30px;
   box-shadow:40px -34px 0 0 #fff,
           -28px -6px 0 -2px #fff,
-          40px 25px 0 -6px rgb(255, 255, 255, 0.9),
-          70px 40px 0 -8px rgb(255, 255, 255, 0.8);
+          40px 25px 0 -6px #fff,
+          70px 40px 0 -8px #fff;
 }
 
 .sm-bubble {
