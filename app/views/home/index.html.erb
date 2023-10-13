@@ -4,10 +4,7 @@
     <%= video_tag("background.mp4",  controls: false, autoplay: true, loop: true, muted: true, playsinline: true, id: "background-video-index") do %>
       Your browser does not support the video tag.
     <% end %>
-    <%= video_tag("start.mp4", controls: false, autoplay: true, loop: true, muted: true, playsinline: true, id: "start-clicked", class: "start") do %>
-      Your browser does not support the video tag.
-    <% end %>
-    <%# <%= image_tag("start.gif", alt: "Start Button", id: "background-video", class: "start") %>
+    <%= image_tag("start.gif", alt: "Click here to start", id: "start-clicked", class: "start")%>
     <div class="svg-container", id="svg-container">
       <div id='train-svg'>
         <%= image_tag("train4.svg", alt: "Train", class: "train-image", id: "train-image") %>
