@@ -1,5 +1,5 @@
 current directory: /Users/jaydenthelwell/code/jaydenthelwell/projects/portfolio/''/gems/yarp-0.12.0/ext/yarp
-/Users/jaydenthelwell/.rbenv/versions/3.1.2/bin/ruby -I /Users/jaydenthelwell/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20231005-21457-u5jkbg.rb extconf.rb
+/Users/jaydenthelwell/.rbenv/versions/3.1.2/bin/ruby -I /Users/jaydenthelwell/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20231014-26198-blfek2.rb extconf.rb
 checking for whether -fvisibility=hidden is accepted as CFLAGS... yes
 compiling build/static/diagnostic.o
 compiling build/static/token_type.o
