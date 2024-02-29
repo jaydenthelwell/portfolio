@@ -20,32 +20,32 @@
 
 #train-svg {
   animation: moveTrain 7s linear;
-  position: relative;
-  top: 440px;
+  position: absolute;
+  top: 50%;
+  width: 70%;
 }
 
-#train-svg-2 {
-  animation: moveTrain2 7s linear forwards;
+.train-door {
+  width: 25%;
   position: absolute;
-  top: 440px;
+  top: 50%;
+  left: 50.7%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.train-image {
+  width: 100%;
 }
 
 .svg-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: absolute;
   width: 100%;
   height: auto;
-}
-
-.train-door {
-  width: 225px;
-  position: absolute;
-  top: 50%;
-  left: 50.45%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
+  top: 55%
 }
 
 .d-none {

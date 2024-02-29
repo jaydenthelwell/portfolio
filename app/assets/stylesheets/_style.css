@@ -1,0 +1,143 @@
+body {
+  overflow-x: hidden;
+  color: rgb(0, 0, 0);
+  margin: 0;
+  padding: 0;
+  background-color: rgb(59, 59, 59);
+}
+
+/* .pop-up-container{
+  position: relative;
+} */
+
+.background {
+  position: relative;
+}
+
+#background-video-index {
+  position: relative;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+@keyframes flyButterfly {
+  0% {
+    transform: translateX(-100%) translateY(0);
+  }
+  10% {
+    transform: translateX(200%) translateY(-20px);
+  }
+  20% {
+    transform: translateX(400%) translateY(0);
+  }
+  30% {
+    transform: translateX(600%) translateY(20px);
+  }
+  40% {
+    transform: translateX(800%) translateY(40px);
+  }
+  50% {
+    transform: translateX(1000%) translateY(60px);
+  }
+  60% {
+    transform: translateX(800%) translateY(80px);
+  }
+  70% {
+    transform: translateX(600%) translateY(100px);
+  }
+  80% {
+    transform: translateX(400%) translateY(120px);
+  }
+  90% {
+    transform: translateX(200%) translateY(140px);
+  }
+  100% {
+    transform: translateX(-100%) translateY(160px);
+  }
+}
+
+.butterfly {
+  animation: flyButterfly 20s linear infinite;
+  width: 3%;
+  position: absolute;
+  top: 500px;
+}
+
+hr {
+  width: 50px;
+  border-color: transparent;
+  border-right-color: rgba(255, 255, 255, 0.9);
+  border-right-width: 50px;
+  position: absolute;
+  bottom: 100%;
+  transform-origin: 100% 50%;
+  animation: rain 1s linear infinite;
+}
+
+@media screen and (min-width: 2600px) {
+  hr {
+    border-right-width: 150px;
+    border-right-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@keyframes rain {
+  from {
+  transform: rotate(105deg) translateX(0);
+  }
+  to {
+  transform: rotate(105deg) translateX(calc(100vh + 20px));
+  }
+}
+
+.start {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 5000;
+}
+
+#rotate-message {
+  display: none;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 24px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.rotate-icon {
+  width: 300px;
+}
+
+@media screen and (min-width: 2600px) {
+  .rotate-icon{
+    width: 1200px;
+  }
+
+  #rotate-message {
+    font-size: 80px;
+  }
+}
+
+/* @font-face {
+  font-family: 'MaryKate';
+  src: url('../fonts/MaryKate.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+} */

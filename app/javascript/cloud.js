@@ -23,7 +23,13 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function rain () {
-    const counter = 100;
+    let counter;
+    if (window.innerWidth > 2600){
+      counter = 200;
+    }
+    else {
+      counter = 100;
+    }
 
     for (let i = 0; i < counter; i++) {
       const hrElement = document.createElement("HR");
@@ -46,12 +52,12 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function changeBackground(cloud) {
-    const background = document.getElementById("background-video");
+    const background = document.getElementById("background-video-index");
     background.style.filter = "grayscale(0.35)";
   }
 
   function resetBackground(cloud) {
-    const background = document.getElementById("background-video");
+    const background = document.getElementById("background-video-index");
     background.style.filter = "";
   }
 

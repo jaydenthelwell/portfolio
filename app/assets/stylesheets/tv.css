@@ -1,104 +1,134 @@
 #tv {
   position: absolute;
-  transform: translateY(177.5%);
-  left: 40.6%;
+  top: 37.1%;
+  left: 42.5%;
   opacity: 0.6;
-  width: 272px;
+  width: 15%;
   height: auto;
-}
-
-#tv-screen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
   z-index: 1;
-  background: rgba(0, 0, 0, 0.7);
 }
 
 #tv-off {
   position: absolute;
-  transform: translateY(160%);
-  left: 40%;
-  width: 290px;
+  top: 36.5%;
+  left: 42%;
+  width: 16%;
   height: auto;
-  z-index: -1;
+  z-index: 0;
+}
+
+.tv-off {
+  position: absolute;
+  width: 50px;
+  margin-top: -27px;
+  transform: translateX(-85%);
+}
+
+#tv-screen {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content-tv {
+  text-align: center;
+  font-size: 125%;
+  font-family: "atma";
+  position: absolute;
+  z-index: 5;
+  max-width: 80%;
+  top: 50%;
+  color: #1B4262;
+  z-index: 1;
+}
+
+.popup-content-tv p {
+  text-align: left;
+}
+
+@media screen and (max-width: 750px) {
+  .popup-content-tv {
+    font-size: 11px !important;
+    z-index: 1;
+  }
+
+  .popup-content-tv p {
+    margin: 0%;
+    font-size: 11px !important;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1000px) {
+  .popup-content-tv {
+    font-size: 15px !important;
+    z-index: 1;
+  }
+
+  .popup-content-tv p {
+    margin: 0%;
+    font-size: 15px !important;
+  }
 }
 
 #lamp {
   position: absolute;
-  transform: translateY(125%);
+  top: 45%;
   left: 23%;
-  width: 120px;
+  width: 8%;
   height: auto;
   z-index: 1;
 }
 
 #dog-bed {
   position: absolute;
-  transform: translateY(630%);
-  left: 10%;
-  width: 140px;
+  top: 77%;
+  left: 11%;
+  width: 12%;
   height: auto;
-  transform-origin: top left;
+  z-index: 0;
 }
 
 #light {
   position: absolute;
-  transform: translateY(695%);
+  top: 53.5%;
   left: 24%;
-  width: 100px;
+  width: 6%;
   height: auto;
   z-index: 1;
 }
 
 #stick {
   position: absolute;
-  transform: translateY(180%);
-  left: 0%;
-  width: 40px;
+  top: 53%;
+  left: 85%;
+  width: 2%;
   height: auto;
   z-index: 1;
+  transform: rotate(8deg);
 }
 
 #dog {
   position: absolute;
-  transform: translateY(1000%);
-  left: 11%;
-  width: 130px;
+  top: 80%;
+  left: 12%;
+  width: 11%;
   height: auto;
   z-index: 1;
 }
 
 #backpack {
   position: absolute;
-  transform: translateY(290%);
+  top: 55%;
   left: 63%;
-  width: 115px;
+  width: 8%;
   height: auto;
   z-index: 1;
 }
-
-.tv-content {
-  text-align: center;
-  position: fixed;
-  z-index: 5;
-  padding-left: 300px;
-  padding-right: 300px;
-  top: 10%;
-  font-size: 20px;
-  font-family: "Atma";
-  color: #1B4262;
-}
-
-.tv-content p {
-font-size: 20px;
-text-align: left;
-color: #1B4262;
-}
-
 .custom-checkbox {
   font-size: 18px;
   font-weight: bold;
@@ -107,8 +137,8 @@ color: #1B4262;
   display: inline-block;
   vertical-align: middle;
   cursor: pointer;
-  padding: 5px 5px;
   border: 2px solid #1B4262;
+  transition: all 0.3s ease;
 }
 
 .checked::before {
@@ -116,11 +146,5 @@ color: #1B4262;
   display: inline-block;
   vertical-align: middle;
   font-size: 18px;
-}
-
-.tv-off {
-  position: absolute;
-  width: 50px;
-  margin-top: -27px;
-  transform: translateX(-85%);
+  transform: scale(0.8);
 }

@@ -1,6 +1,8 @@
 <div class="background">
+  <%= link_to("beach") do %>
+      <button class="back_button">BACK<i class="fa-solid fa-caret-up fa-rotate-270" style="color: #000000;"></i></button>
+  <% end %>
   <div class="background-elements">
-
     <%= video_tag("about_me_vid.mp4", autoplay: true, loop: true, muted: true, playsinline: true, id: "background-video") do %>
       Your browser does not support the video tag.
     <% end %>
@@ -9,13 +11,41 @@
         Your browser does not support the video tag.
       <% end %>
     </div>
-    <div class="hobbies-popup-container">
-      <%= image_tag("hobbies.png", alt: "Hobbies", class: "d-none", id: "hobbies") %>
-      <%= image_tag("onbutton.png", class: "close-hobbies", id: "close-hobbies")%>
+    <div class="hobbies-popup-container d-none">
+      <div class="parchment">
+        <%= image_tag("hobbies.png", alt: "Hobbies", class: "parchment", id: "hobbies-option") %>
+        <div class="popup-content-beach">
+        <%= image_tag("cross.png", class: "close-option", id: "close-option")%>
+        </div>
+      </div>
+    </div>
+    <div class="technical-skills-popup-container d-none">
+      <div class="parchment">
+        <%= image_tag("technical_skills.png", alt: "technical-skills", class: "parchment", id: "technical-skills-option") %>
+        <div class="popup-content-beach">
+        <%= image_tag("cross.png", class: "close-option", id: "skills-close-option")%>
+        </div>
+      </div>
+    </div>
+    <div class="education-popup-container d-none">
+      <div class="parchment">
+        <%= image_tag("education.png", alt: "education", class: "parchment", id: "education-option") %>
+        <div class="popup-content-beach">
+        <%= image_tag("cross.png", class: "close-option", id: "education-close-option")%>
+        </div>
+      </div>
+    </div>
+    <div class="work-popup-container d-none">
+      <div class="parchment">
+        <%= image_tag("work_experience.png", alt: "work experience", class: "parchment", id: "work-option") %>
+        <div class="popup-content-beach">
+        <%= image_tag("cross.png", class: "close-option", id: "work-close-option")%>
+        </div>
+      </div>
     </div>
     <div>
       <%= image_tag("lamp.png", alt: "Lamp", id: "lamp") %>
-      <%= image_tag("light-on.png", alt: "Light", id: "light") %>
+      <%= image_tag("light-on.png", alt: "Light", class: "d-none", id: "light") %>
     </div>
     <div>
       <%= image_tag("tv.png", alt: "Tv", id: "tv-off") %>
@@ -25,21 +55,20 @@
     </div>
   </div>
   <%= image_tag("walking-stick.png", alt:"Walking Stick", id:"stick") %>
-  <%= image_tag("dog.png", alt:"Dog", id:"dog") %>
+  <%= image_tag("dog.png", alt:"Dog", class: "d-none", id:"dog") %>
   <%= image_tag("backpack.png", alt: "Backpack", id: "backpack") %>
-  <div class="tv-popup-container">
-    <%= image_tag("tv-pop-up.png", alt: "Tv", id: "tv-screen") %>
-    <div class="tv-content">
-      <h1>Meet Me Online</h1>
-        <p>Here, you'll find a collection of clickable objects that reveal different aspects of my life and personality.
-        Navigate through this space, clicking on each object to uncover interesting facts about me.
-        <p>The checklist below keeps track of your exploration, marking off items as you go.</p>
-        <p>This interactive experience is designed to help you learn more about me. Enjoy your journey!</p>
-        <p onclick="toggleCheckbox(this)"><span class="custom-checkbox" id="academic"></span> Click on the backpack to learn about my academic background.</p>
-        <p onclick="toggleCheckbox(this)"><span class="custom-checkbox" id="experience"></span> Explore my work experience by clicking on the hiking stick to discover my professional journey.</p>
-        <p onclick="toggleCheckbox(this)"><span class="custom-checkbox" id="technologies"></span> Check out the technologies I'm proficient in by clicking on the lamp.</p>
-        <p onclick="toggleCheckbox(this)"><span class="custom-checkbox" id="interests"></span> Hobbies and Interests.</p>
-      <%= image_tag("onbutton.png", class: "tv-off", id: "close-popup")%>
+  <div class="tv-popup-container d-none">
+    <div class="parchment">
+      <%= image_tag("meet_me_online_here.png", alt: "Meet Me Online", class: "parchment", id: "tv-screen") %>
+      <div class="popup-content-tv">
+          <p onclick="toggleCheckbox(this)"><span class="custom-checkbox" id="academic"></span> Click on the backpack to learn about my academic background.</p>
+          <p onclick="toggleCheckbox(this)"><span class="custom-checkbox" id="experience"></span> Explore my work experience by clicking on the hiking stick.</p>
+          <p onclick="toggleCheckbox(this)"><span class="custom-checkbox" id="technologies"></span> Check out the technologies I'm proficient in by clicking on the lamp.</p>
+          <p onclick="toggleCheckbox(this)"><span class="custom-checkbox" id="interests"></span> Select the dog bed to explore my hobbies and interests..</p>
+      </div>
+      <div>
+        <%= image_tag("cross.png", class: "close-option", id: "close-popup") %>
+      </div>
     </div>
   </div>
 </div>

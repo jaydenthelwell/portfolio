@@ -2,30 +2,51 @@
 <html>
   <head>
     <title>Portfolio</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer">
-    <%# <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=lobster"> %>
+      <% if controller_name == 'home' && action_name == 'index' %>
+        <meta name="viewport" content="width=device-width, initial-scale=0.25" data-controller="<%= controller_name %>" data-action="<%= action_name %>">
+      <% else %>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      <% end %>
+    <link href="https://fonts.cdnfonts.com/css/marykate" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/marykate" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Londrina+Outline">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Londrina+Shadow">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Atma">
+    <link href="https://fonts.googleapis.com/css2?family=Atma:wght@700&family=Roboto+Condensed&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atma:wght@700&display=swap">
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css' %>
+    <%= javascript_include_tag 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js' %>
 
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
-    <%= javascript_include_tag 'application' %>
-    <%= javascript_include_tag 'train' %>
-    <%= javascript_include_tag 'cloud' %>
-    <%= javascript_include_tag 'scroll' %>
-    <%= javascript_include_tag 'post-it' %>
-    <%= javascript_include_tag 'tv' %>
-    <%= javascript_include_tag 'checkbox' %>
-    <%= javascript_include_tag 'hobbies' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%# <%= viewport_meta_tag %>
   </head>
 
   <body>
+    <div id="rotate-message">
+      <%= image_tag("rotate-smartphone.png", class:"rotate-icon" , alt: "Rotate Phone") %>
+      <p>Please rotate your device to landscape mode</p>
+    </div>
+        <%= render 'shared/scroll' %>
     <%= yield %>
+    <%= javascript_include_tag 'scroll', "data-turbolinks-track" => true %>
+    <%= javascript_include_tag 'train', "data-turbolinks-track" => true %>
+    <%= javascript_include_tag 'checkbox', "data-turbolinks-track" => true %>
+    <%= javascript_include_tag 'cloud' %>
+    <%= javascript_include_tag 'post-it', "data-turbolinks-track" => true %>
+    <%= javascript_include_tag 'tv', "data-turbolinks-track" => true %>
+    <%= javascript_include_tag 'orientation', "data-turbolinks-track" => true %>
+    <%= javascript_include_tag 'door', "data-turbolinks-track" => true %>
+    <%= javascript_include_tag 'map_object', "data-turbolinks-track" => true %>
+    <%= javascript_include_tag 'speech', "data-turbolinks-track" => true %>
+    <%= javascript_include_tag 'scroll_down', "data-turbolinks-track" => true %>
+    <%# <%= javascript_include_tag 'media_query', "data-turbolinks-track" => true %>
   </body>
 </html>

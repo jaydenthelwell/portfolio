@@ -1,12 +1,32 @@
+#background-video {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* @media screen and (max-width: 700px) {
+  #background-video {
+    top: -3%;
+  }
+} */
+
+.container-beach {
+  overflow-y: hidden;
+}
+
 .boat {
-  position: fixed;
-  top: 58%;
+  position: absolute;
+  top: 73%;
   left: 35%;
   width: 35%;
 }
 
 .beach_ball {
-  position: fixed;
+  position: absolute;
   top: 70%;
   left: 80%;
   width: 5%;
@@ -14,11 +34,24 @@
 }
 
 .background_boat {
-  position: fixed;
+  position: absolute;
+  display: none;
   top: 35%;
   left: 60%;
   width: 8%;
   animation: boat 100s linear forwards;
+}
+
+@media screen and (max-width: 1000px) {
+
+  @keyframes boat {
+    0% {
+      transform: translateX(200%) ;
+    }
+    100% {
+      transform: translateX(190%);
+    }
+  }
 }
 
 @keyframes boat {
@@ -34,70 +67,69 @@
 
 @keyframes sunsetCloud {
   0% {
-    transform: translateX(0%);
+    transform: translateX(110%);
   }
   100% {
-    transform: translateX(200%);
+    transform: translateX(300%);
   }
 }
 
 @keyframes sunsetCloud2 {
   0% {
-    transform: translateX(0%);
+    transform: translateX(350%);
   }
   100% {
-    transform: translateX(130%);
+    transform: translateX(400%);
   }
 }
 
 .sunset-cloud-1 {
-  position: fixed;
-  left: 30%;
+  position: absolute;
   width: 25%;
   top: -10%;
-  animation: sunsetCloud 200s linear infinite;
+  animation: sunsetCloud 100s linear infinite;
 }
 
 .sunset-cloud-2 {
-  position: fixed;
-  left: 75%;
+  position: absolute;
   width: 20%;
   top: 0%;
-  animation: sunsetCloud2 130s linear infinite;
-}
-
-.jungle {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
+  animation: sunsetCloud2 30s linear infinite;
 }
 
 .sign-post {
-  position: fixed;
-  width: 180px;
+  position: absolute;
+  width: 16%;
   left: 45%;
-  top: 45%;
+  top: 40%;
 }
 
 #door {
-  position: fixed;
-  width: 80px;
-  top: 42.5%;
-  left: 19.8%;
-  transition: 0.8s;
+  position: absolute;
+  top: 41%;
+  left: 20%;
 }
 
 #door img {
   visibility: hidden;
-  width: 75px;
+  width: 43%;
 }
 
-#door:hover img {
-  visibility: visible;
+@media screen and (max-width: 700px) {
+  #door {
+    top: 40.6% !important;
+    left: 20%!important;
+  }
+
+  #door img {
+    width: 20%!important;
+  }
+
+  .boat {
+    width: 36%;
+    top: 70%;
+    left: 35%;
+  }
 }
 
 @keyframes bounce {
@@ -113,14 +145,19 @@
 }
 
 .post-it-beach {
-  position: fixed;
-  width: 65px;
+  position: absolute;
+  width: 4%;
   top: 43%;
-  left: 13.8%;
+  left: 14%;
+  z-index: 5000;
 }
+/*
+.post-it-container {
+  position: relative;
+} */
 
-.post-it-text {
-  position: fixed;
+/* .post-it-text {
+  position: absolute;
   width: 65px;
   top: 43%;
   left: 13.8%;
@@ -128,4 +165,40 @@
   font-family: "Atma";
   text-align: center;
   color: #1B4262;
+} */
+
+/* @media screen and (max-width: 700px) {
+  .post-it-text {
+    font-size: 12px;
+  }
+} */
+
+.close-popup-beach {
+  position: absolute;
+  top: 87%;
+  z-index: 11;
+  left: 67%;
+  width: 3%;
+}
+
+@media screen and (max-width: 700px) {
+  .close-popup-beach {
+    top: 87% !important;
+  }
+}
+
+.beach-hut {
+  position: absolute;
+  visibility: visible;
+  top: 25%;
+  left: 5%;
+  width: 30%;
+  z-index: 10;
+}
+
+#beach_hut_door {
+  position: absolute;
+  top: 26.58%;
+  left: 5.1%;
+  width: 29.5%;
 }

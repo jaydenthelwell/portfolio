@@ -1,0 +1,51 @@
+<div class="navbar-container">
+  <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+    <div class="container-fluid">
+      <%= link_to "/", class: "home" do %>
+        <%= image_tag "home.png", alt:"home--v3" %>
+      <% end %>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto">
+            <li class="nav-item" style="padding-top: 10px; margin-right: -170px">
+              <%= link_to "https://www.linkedin.com/in/jayden-thelwell-34923326b/", class: "navbar-brand" do %>
+                <%= image_tag "linkedin.png", alt:"linkedin"%>
+              <% end %>
+            </li>
+            <li class="nav-item" style="padding-top: 10px; margin-right: -180px">
+              <%= link_to "https://github.com/jaydenthelwell", class: "navbar-brand" do %>
+                <%= image_tag "github.png", alt:"github--v1"%>
+              <% end %>
+            </li>
+            <div class="dropdown">
+              <li style="padding-top: 5px;">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <button class="contact_button">Options <i class="fas fa-chevron-down" style="margin-left: 5px;"></i></button>
+                </a>
+                <div class="dropdown-option" aria-labelledby="navbarDropdown">
+                    <%= link_to "Beach", "/beach", class: "nav-link" %>
+                    <%= link_to "About Me", "/about", class: "nav-link" %>
+                    <%= link_to "Project Island", "/projects", class: "nav-link" %>
+                </div>
+              </li>
+            </div>
+            <div class="dropdown">
+              <li style="padding-top: 5px; padding-left: 1rem;">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <button class="contact_button">Contact<i class="fas fa-chevron-down" style="margin-left: 5px;"></i></button>
+                </a>
+                <div class="dropdown-contact" aria-labelledby="navbarDropdown">
+                  <%= link_to "Email me", "mailto:jaydenthelwell02@gmail.com", class: "nav-link" %>
+                  <%= link_to "07794 873250", "tel:+447794873250", class: "nav-link" %>
+                </div>
+              </li>
+            </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

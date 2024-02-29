@@ -13,6 +13,4 @@
  *= require_tree .
  *= require_self
  */
-@import 'style';
-@import 'train';
-@import 'parchment';
+/* @import 'style'; */

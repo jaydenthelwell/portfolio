@@ -1,20 +1,52 @@
 <div class="background">
   <%= image_tag("project-island.png", alt: "Project Island", id: "background-video") %>
-<h1 id="projects-title">Project Island</h1>
-</div>
-<div id="jam">
-  <%= link_to("http://www.jamwithme.site/") do %>
-    <%= image_tag("Jam.png", alt: "Home") %>
+  <%= link_to ("beach") do %>
+      <button class="project_back_button">BACK<i class="fa-solid fa-caret-up fa-rotate-270" style="color: #000000;"></i></button>
   <% end %>
-  <div id="music">
-    <%= image_tag("music-notes.png", alt: "Music-notes") %>
+  <div class="map-object" id="jam">
+    <%= image_tag("Jam.png", alt: "Jam") %>
+        <%# <% end %>
+        <%# <div id="music">
+          <%= image_tag("music-notes.png", alt: "Music-notes") %>
+        <%# </div> %>
+
+    <div id="jam-description" class="description-box d-none;">
+      <h2>Jam</h2>
+    Description: A music matchmaking app, connecting you with other Spotify users based on your most listened to genres.<br><br>
+    Role: I led a team of four talented developers in a 10 day project to create Jam playing a crucial role in designing and developing the application. I was responsible for implementing key features, such as the visual stories feauture, sign up process and in-app chatrooms, and ensuring the app's overall functionality and user experience.
+      <br><br>
+    Key Features:
+      <ul>
+        <li>Music Matchmaking: Connect with like-minded Spotify users.</li>
+        <li>Seamless Spotify Integration: Sync your Spotify account.</li>
+        <li>In-App Chatrooms: Chat with matches in real-time.</li>
+        <li>Music Playback: Play songs through the app.</li>
+        <li>Visual Stories: Post and share musical experiences.</li>
+        <li>Swipe to Match: Easy, music-based connections.</li>
+      </ul>
+      Go to: <%= link_to "Jam", "https://j-a-m-1f39b9aba9a4.herokuapp.com/", target: "_blank" %>
+    </div>
   </div>
-</div>
-<div id="groove">
-  <%= link_to("https://groove-ltd-d56e445f9f55.herokuapp.com/") do %>
-    <%= image_tag("groove.png", alt: "Home") %>
-  <% end %>
-  <div id="instrument">
-    <%= image_tag("instrument.png", alt: "Music-notes") %>
+
+  <div class="map-object" id="groove">
+    <%# <%= link_to("https://groove-ltd-d56e445f9f55.herokuapp.com/") do %>
+    <%= image_tag("groove.png", alt: "Groove") %>
+    <%# <% end %>
+    <div id="groove-description" class="description-box-2 d-none;">
+      <h2>Groove</h2>
+      Description: Groove is an innovative instrument sharing app that revolutionizes the way musicians access and share musical instruments.
+      <br><br>
+      Role: Key developer on a 5-day project for Groove. Led the development of the map feature, designed the landing page, and handled front-end development. Collaborated with a team of three developers to implement critical features, including instrument listings, user profiles, and the booking system, ensuring a seamless user experience.
+      <br><br>
+      Key Features:
+      <ul>
+        <li>Instrument Listings: Discover a wide range of instruments available for rent.</li>
+        <li>Profile Management: Create and manage your musician profile, including instrument listings and availability.</li>
+        <li>Booking System: Effortlessly book instruments.</li>
+        <li>Review and Ratings: Leave and receive reviews.</li>
+        <li>Rent and Earn: Rent out your unused instruments and generate income.</li>
+      </ul>
+      Go to:<%= link_to "Groove", "https://groove-ltd-d56e445f9f55.herokuapp.com", target: "_blank" %>
+    </div>
   </div>
 </div>
