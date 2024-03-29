@@ -34,7 +34,7 @@
       <%= image_tag("rotate-smartphone.png", class:"rotate-icon" , alt: "Rotate Phone") %>
       <p>Please rotate your device to landscape mode</p>
     </div>
-      <%# <%= render 'shared/scroll' %>
+
     <%= yield %>
     <%= javascript_include_tag 'scroll', "data-turbolinks-track" => true %>
     <%= javascript_include_tag 'train', "data-turbolinks-track" => true %>
