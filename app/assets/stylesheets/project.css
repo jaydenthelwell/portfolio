@@ -80,7 +80,7 @@
 .description-box-2 {
   position: absolute;
   text-align: left;
-  top: -300%;
+  top: -200%;
   left: 50%;
   transform: translateX(-40%);
   background-color: #333;
