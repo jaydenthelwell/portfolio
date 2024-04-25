@@ -5,10 +5,13 @@ document.addEventListener("DOMContentLoaded", function (){
   const descriptionElement2 = document.getElementById('groove-description');
   const mapObject3 = document.getElementById('candella');
   const descriptionElement3 = document.getElementById('candella-description');
+  const mapObject4 = document.getElementById('realfood');
+  const descriptionElement4 = document.getElementById('realfood-description');
 
   descriptionElement.classList.add("d-none");
   descriptionElement2.classList.add("d-none");
   descriptionElement3.classList.add("d-none");
+  descriptionElement4.classList.add("d-none");
 
 
   // if (window.innerWidth < 1000) {
@@ -45,6 +48,14 @@ document.addEventListener("DOMContentLoaded", function (){
 
     mapObject3.addEventListener('mouseout', function () {
       descriptionElement3.classList.add("d-none");
+    });
+
+    mapObject4.addEventListener('mouseover', function () {
+      descriptionElement4.classList.remove("d-none");
+    });
+
+    mapObject4.addEventListener('mouseout', function () {
+      descriptionElement4.classList.add("d-none");
     });
   // }
 })
