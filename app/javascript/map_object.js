@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function (){
   const mapObject3 = document.getElementById('candella');
   const descriptionElement3 = document.getElementById('candella-description');
   const mapObject4 = document.getElementById('realfood');
-  const descriptionElement4 = document.getElementById('realfood-description');
+  const descriptionElement4 = document.getElementById('real-food-description');
 
   descriptionElement.classList.add("d-none");
   descriptionElement2.classList.add("d-none");
