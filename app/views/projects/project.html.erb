@@ -1,7 +1,8 @@
 <div class="background">
+  <h3 class="demo-announcement">Demo videos available for 2 out of 4 apps,<br> more coming soon.</h3>
   <%= image_tag("project-island.png", alt: "Project Island", id: "background-video") %>
   <%= link_to ("beach") do %>
-      <button class="project_back_button">BACK<i class="fa-solid fa-caret-up fa-rotate-270" style="color: #000000;"></i></button>
+    <button class="project_back_button">BACK<i class="fa-solid fa-caret-up fa-rotate-270" style="color: #000000;"></i></button>
   <% end %>
   <div class="map-object" id="jam">
     <%= image_tag("Jam.png", alt: "Jam") %>
@@ -11,7 +12,9 @@
         <%# </div> %>
 
     <div id="jam-description" class="description-box d-none">
-      <h2>Jam</h2>
+    <h1 style="color: red;">
+      <%= link_to "Click here: Jam Demo Video", "https://www.loom.com/share/04254e9ec62744b4add48e5c1880a6b5?sid=2918d369-835d-49bd-8e23-fc6f51f7593cs", target: "_blank" %> <br>
+    </h1>
     Description: A music matchmaking app, connecting you with other Spotify users based on your most listened to genres.<br><br>
     Role: I led a team of four talented developers in a 10 day project to create Jam playing a crucial role in designing and developing the application. I was responsible for implementing key features, such as the visual stories feauture, sign up process and in-app chatrooms, and ensuring the app's overall functionality and user experience.
       <br><br>
@@ -56,7 +59,9 @@
     <%= image_tag("candella.png", alt: "Candella Sparks logo") %>
     <%# <% end %>
     <div id="candella-description" class="description-box-3 d-none">
-      <h2>Candle Company</h2>
+      <h1 style="color: red;">
+        <%= link_to "Click here: Candle Website Demo Video", "https://www.loom.com/share/16f6c9696ce54bc28251d253a6c87fb6?sid=c5a69430-7dc2-4f44-b7e4-d5ceb04ea528", target: "_blank" %> <br>
+      </h1>
       Description:
       <br>
       Developed a full-stack Ruby on Rails application for Candella Sparks, a candle-selling platform. Integrated Stripe payment processing to facilitate seamless transactions and enhance user experience.
