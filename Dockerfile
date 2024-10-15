@@ -1,15 +1,21 @@
 # Use a base Ruby image
 FROM ruby:3.1.2
 
-# Install required dependencies, including Node.js for ExecJS
-RUN apt-get update -qq && apt-get install -y nodejs postgresql-client
+# Install required dependencies, including Node.js for ExecJS and PostgreSQL client
+RUN apt-get update -qq && \
+    apt-get install -y nodejs postgresql-client curl && \
+    apt-get clean
 
 # Set up working directory
 WORKDIR /app
 
 # Install Bundler and Rails dependencies
 COPY Gemfile Gemfile.lock ./
-RUN bundle install
+RUN gem install bundler && bundle install
+
+# Install JavaScript runtime (Node.js is already included here)
+# This line is not necessary as Node.js is already installed
+# RUN curl -sL https://deb.nodesource.com/setup_16.x | bash && apt-get install -y nodejs
 
 # Copy the rest of your application code
 COPY . .
