@@ -93,6 +93,8 @@ GEM
     debug (1.8.0)
       irb (>= 1.5.0)
       reline (>= 0.3.1)
+    dockerfile-rails (1.6.22)
+      rails (>= 3.0.0)
     erubi (1.12.0)
     execjs (2.9.1)
     ffi (1.16.3)
@@ -243,6 +245,7 @@ DEPENDENCIES
   bootstrap (~> 5.3.0)
   capybara
   debug
+  dockerfile-rails (>= 1.6)
   execjs
   importmap-rails
   jbuilder
@@ -260,7 +263,7 @@ DEPENDENCIES
   web-console
 
 RUBY VERSION
-   ruby 3.1.2p20
+   ruby 3.2.2p53
 
 BUNDLED WITH
    2.4.18
