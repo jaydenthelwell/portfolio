@@ -3,6 +3,7 @@ FROM ruby:3.1.2
 
 # Install required dependencies, including Node.js for ExecJS and PostgreSQL client
 RUN apt-get update -qq && \
+    apt-get install -y apt-utils && \
     apt-get install -y nodejs postgresql-client curl && \
     apt-get clean
 

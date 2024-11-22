@@ -1,3 +1,7 @@
 tmp/*
 log/*
 .bundle/*
+node_modules
+.git
+*.log
+.env
